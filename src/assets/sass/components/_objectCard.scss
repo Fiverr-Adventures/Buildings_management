@@ -1,0 +1,20 @@
+.objectCard{
+    @include flex( space-between, center);
+    border: solid 1px;
+    .objectInfo {
+        display: flex;
+        flex-direction: column;
+        label{
+            margin-bottom: 0 !important;
+        }
+        small{
+            color: $cool-grey;
+        }
+        .building {
+            @include flex(space-between, flex-start);
+            gap: 7.5px;
+            width: 70px;
+        }
+
+    }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="135" height="43" viewBox="0 0 135 43">
+  <g id="Composant_4_5" data-name="Composant 4 – 5" transform="translate(1 5)">
+    <g id="users" transform="translate(-1 4)">
+      <path id="Tracé_16" data-name="Tracé 16" d="M22.818,23.182V20.455A5.455,5.455,0,0,0,17.364,15H6.455A5.455,5.455,0,0,0,1,20.455v2.727" transform="translate(0 4.364)" fill="none" stroke="#3a3b3c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle id="Ellipse_13" data-name="Ellipse 13" cx="5.455" cy="5.455" r="5.455" transform="translate(6.455 3)" fill="none" stroke="#3a3b3c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Tracé_17" data-name="Tracé 17" d="M24.091,23.135V20.407A5.455,5.455,0,0,0,20,15.13" transform="translate(6.909 4.411)" fill="none" stroke="#3a3b3c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Tracé_18" data-name="Tracé 18" d="M16,3.13A5.455,5.455,0,0,1,16,13.7" transform="translate(5.455 0.047)" fill="none" stroke="#3a3b3c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <text id="People" transform="translate(86 30)" fill="#178fed" font-size="32" font-family="SegoeUI, Segoe UI" opacity="0"><tspan x="-47.758" y="0">People</tspan></text>
+  </g>
+</svg>

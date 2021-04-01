@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="147" height="43" viewBox="0 0 147 43">
+  <g id="Composant_5_3" data-name="Composant 5 – 3" transform="translate(0 5)">
+    <g id="group_work-24px" transform="translate(0 1)">
+      <path id="Tracé_36" data-name="Tracé 36" d="M0,0H36V36H0Z" fill="none"/>
+      <path id="Tracé_37" data-name="Tracé 37" d="M17,2A15,15,0,1,0,32,17,15.005,15.005,0,0,0,17,2Zm0,27A12,12,0,1,1,29,17,12.016,12.016,0,0,1,17,29Z" transform="translate(1 1)" fill="#3a3b3c"/>
+      <circle id="Ellipse_29" data-name="Ellipse 29" cx="3" cy="3" r="3" transform="translate(9 18)" fill="#3a3b3c"/>
+      <circle id="Ellipse_30" data-name="Ellipse 30" cx="3" cy="3" r="3" transform="translate(15 9)" fill="#3a3b3c"/>
+      <circle id="Ellipse_31" data-name="Ellipse 31" cx="3" cy="3" r="3" transform="translate(21 18)" fill="#3a3b3c"/>
+    </g>
+    <text id="Groups" transform="translate(44 30)" fill="#178fed" font-size="32" font-family="SegoeUI, Segoe UI" opacity="0"><tspan x="0" y="0">Groups</tspan></text>
+  </g>
+</svg>

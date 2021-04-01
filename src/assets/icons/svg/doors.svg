@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="127" height="43" viewBox="0 0 127 43">
+  <g id="Composant_6_3" data-name="Composant 6 – 3" transform="translate(0 5)">
+    <g id="meeting_room-24px" transform="translate(0 2)">
+      <path id="Tracé_23" data-name="Tracé 23" d="M0,0H36V36H0Z" fill="rgba(0,0,0,0)"/>
+      <path id="Tracé_24" data-name="Tracé 24" d="M27,27V4.5H21V3H6V27H3v3H21V7.5h3V30h6V27Zm-9,0H9V6h9ZM13.5,15h3v3h-3Z" transform="translate(1.5 1.5)" fill="#3a3b3c"/>
+    </g>
+    <text id="Doors" transform="translate(42 30)" fill="#178fed" font-size="32" font-family="SegoeUI, Segoe UI" opacity="0"><tspan x="0" y="0">Doors</tspan></text>
+  </g>
+</svg>

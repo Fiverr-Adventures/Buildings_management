@@ -1,26 +1,33 @@
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-// } from "react-router-dom";
-import '../src/assets/sass/style.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../src/assets/css/style.css';
+import SideBar from "../src/components/sideBar";
+import CustomCard from "../src/components/card";
+import People from "./pages/people";
+import Buildings from "./pages/buildings";
 function App() {
   
   return (
-    <div>
-      <h3>Hello world</h3>
-      <small>that is small</small>
-    </div>
-    // <Router>
-    //     <Switch>
-    //     <Route path='/Register'>
-    //         <Register />
-    //     </Route>
-    //     <Route path='/'>
-    //       <SideBar></SideBar>
-    //     </Route>
-    //     </Switch>
-    // </Router>
+    // <>
+    //   <CustomCard/>
+    // </>
+    <Router>
+        <Switch>
+        {/* <Route path='/Home'>
+            <Home />
+        </Route> */}
+        <Route path='/People'>
+             <People />
+        </Route>
+        <Route path='/Buildings'>
+             <Buildings />
+        </Route>
+        </Switch>
+    </Router>
   );
 }
 

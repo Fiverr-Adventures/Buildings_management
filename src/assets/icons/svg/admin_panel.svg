@@ -1,0 +1,12 @@
+<svg id="admin_panel_settings-24px" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="Groupe_34" data-name="Groupe 34">
+    <rect id="Rectangle_79" data-name="Rectangle 79" width="36" height="36" fill="none"/>
+  </g>
+  <g id="Groupe_36" data-name="Groupe 36" transform="translate(4.5 4.5)">
+    <g id="Groupe_35" data-name="Groupe 35">
+      <circle id="Ellipse_34" data-name="Ellipse 34" cx="1.68" cy="1.68" r="1.68" transform="translate(19.32 17.07)" fill="#fb9595"/>
+      <path id="Tracé_38" data-name="Tracé 38" d="M18.12,17.5c-1.095,0-3.285.54-3.36,1.62a4.094,4.094,0,0,0,6.72,0C21.4,18.04,19.215,17.5,18.12,17.5Z" transform="translate(2.88 4.25)" fill="#fb9595" fill-rule="evenodd"/>
+      <path id="Tracé_39" data-name="Tracé 39" d="M25.5,15.135V7.9L14.25,3,3,7.9V15.27C3,22.08,7.8,28.455,14.25,30a13.749,13.749,0,0,0,2.4-.825,8.993,8.993,0,1,0,8.85-14.04ZM15,24a8.649,8.649,0,0,0,.345,2.43,9.881,9.881,0,0,1-1.095.45A12.312,12.312,0,0,1,6,15.27V9.87l8.25-3.6,8.25,3.6v5.265A9,9,0,0,0,15,24Zm9,6a6,6,0,1,1,6-6A6,6,0,0,1,24,30Z" transform="translate(-3 -3)" fill="#fb9595" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

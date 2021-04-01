@@ -1,17 +1,16 @@
 $padding-horizontal: 210px;
 
 // Primary Color
-$bright-blue: #0071ff;
-$dark-indigo: #0f0a4d;
-$deep-lilac: #8785a6;
-$dusk: #575482;
-$dark-slate-blue: #27225f;
-$dark-seafoam-green: #3bb273;
-$ice-blue: #e6f1ff;
-$topaz: #18d1be;
-$cloudy-blue: #b7b6ca;
-$pale-lilac: #e7e7ed;
-$pale-grey: #f9f9fc;
+$pale-grey: #e4e6ea;
+$azure: #178fed;
+$golden-yellow: #fec32d;
+$charcoal-grey: #3a3b3c;
+$peachy-pink: #fd9493;
+$lightish-green: #86de6c;
+$black: #191919;
+$black-two: #121212;
+$cool-grey: #b1b3b7;
+$white: #ffffff;
 
 //Shadow
 $shadow-1: 0px 10px 50px 0px rgba(77,86,106, 0.73);
@@ -35,10 +34,6 @@ $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
-
-// Black & White
-$black: #000000;
-$white: #ffffff;
 
 //Font Path
 $font-primary-medium-path: "../fonts/" + $font-primary + "/" + $font-primary + "-Medium.ttf";
