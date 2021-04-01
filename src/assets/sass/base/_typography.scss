@@ -1,12 +1,13 @@
 /*=== Import Fonts ===*/
+@include font-face($font-primary-medium, $font-primary-medium-path);
+@include font-face($font-primary-bold, $font-primary-bold-path);
 @include font-face($font-primary-regular, $font-primary-regular-path);
-@include font-face($font-primary-black, $font-primary-black-path);
-
 /*=== Typography Styling ===*/
 body {
-    font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
     letter-spacing: normal;
 }
 a {
@@ -24,23 +25,32 @@ a {
     }
     cursor: pointer;
 }
-
-h1 {
- 
-}
-
-h2 {
-  
-}
-
 h3 {
-  
+    font-family: $font-primary-medium;
+    font-size: 48px;
 }
-
-h4 {
-
+label {
+    font-family: $font-primary-medium;
+    font-size: 24px;
 }
-
+button {
+    font-family: $font-primary-bold;
+    font-size: 20px;
+    font-weight: bold;
+}
+.medium {
+    font-family: $font-primary-medium;
+    font-size: 20px;
+}
+.search {
+    font-family: $font-primary-regular;
+    font-size: 20px;
+    text-align: left;
+}
+small {
+    font-family: $font-primary-medium;
+    font-size: 16px;
+}
 
 // How typogrraphy should looks like on mobile version
 @include for-size(desktop-down){
