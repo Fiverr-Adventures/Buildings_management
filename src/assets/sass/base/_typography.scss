@@ -1,0 +1,57 @@
+/*=== Import Fonts ===*/
+@include font-face($font-primary-regular, $font-primary-regular-path);
+@include font-face($font-primary-black, $font-primary-black-path);
+
+/*=== Typography Styling ===*/
+body {
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+}
+a {
+    &:link {
+     text-decoration: none;
+    }
+    &:visited {
+        text-decoration: none;
+    }
+    &:hover {
+     text-decoration: none;
+    }
+    &:active {
+     text-decoration: none;
+    }
+    cursor: pointer;
+}
+
+h1 {
+ 
+}
+
+h2 {
+  
+}
+
+h3 {
+  
+}
+
+h4 {
+
+}
+
+
+// How typogrraphy should looks like on mobile version
+@include for-size(desktop-down){
+            
+}
+@include for-size(tablet-landscape-down){
+    
+}
+@include for-size(tablet-portrait-down){
+    
+}
+@include for-size(phone-only){
+    
+}
