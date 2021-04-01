@@ -1,6 +1,10 @@
 .objectCard{
     @include flex( space-between, center);
-    border: solid 1px;
+    width: 100%;
+    margin-bottom: 33px;
+    padding: 17px 44px 28px 27px;
+    border-radius: 22px;
+    // background-color: $charcoal-grey;
     .objectInfo {
         display: flex;
         flex-direction: column;
@@ -10,11 +14,24 @@
         small{
             color: $cool-grey;
         }
-        .building {
-            @include flex(space-between, flex-start);
-            gap: 7.5px;
-            width: 70px;
+    }
+    .properties {
+        .elem{
+            width: 97px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            span{
+                color: $charcoal-grey;
+                margin-left: auto
+                // color: $charcoal-grey;
+            }
         }
-
+        .people {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
     }
 }

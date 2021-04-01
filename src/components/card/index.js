@@ -11,7 +11,7 @@ export default function CustomCard(props){
                 {props.objects.map(object => {
                     return (
                         <ObjectCard  name={object.name} desc={object.desc} type={props.type}
-                                    key={object.key}  door={object.door}
+                                    vpnKey={object.vpnKey}  door={object.door} 
                         >
                         </ObjectCard>)
                 })}

@@ -1,17 +1,20 @@
-// import {  } from "../../assets/icons/svg/door";
+import Key from '../../assets/icons/svg/key.svg';
+import Door from '../../assets/icons/svg/door.svg';
+import AdminPanel from '../../assets/icons/svg/admin_panel.svg';
+
 export default function ObjectCard(props){
 
     function Properties() {
         if (props.type === "people")
             return (
-                <div>
-                    <div>
-                        <span className="medium">{props.key}</span>
-                        <img src={props.keyImg} /> 
+                <div className="people">
+                    <div className="elem">
+                        <span className="medium">{props.vpnKey}</span>
+                        <img src={Key} /> 
                     </div>
-                    <div>
+                    <div className="elem">
                         <span className="medium">{props.door}</span>
-                        <img src={props.doorImg}  /> 
+                        <img src={Door} alt={Door} /> 
                     </div>
                 </div>
             )
@@ -19,12 +22,12 @@ export default function ObjectCard(props){
             return (
                 <div>
                     <div>
-                        <p className="medium">{props.includes}</p>
-                        <img src={props.includesImg}  />
+                        <p className="medium">{props.AdminPanel}</p>
+                        <img src={AdminPanel}  />
                     </div>
                     <div>
                         <span className="medium">{props.door}</span>
-                        <img src={props.doorImg}  /> 
+                        <img src={Door}  /> 
                     </div>
                 </div>
             )
@@ -34,9 +37,9 @@ export default function ObjectCard(props){
             )
         else if (props.type === "buildings")
             return (
-                <div className="building">
+                <div className="elem">
                     <span className="medium">{props.door}</span>
-                    <img src={props.doorImg} alt={props.doorImg} /> 
+                    <img src={Door} alt={Door} /> 
                 </div>
             )
         else {
@@ -49,8 +52,9 @@ export default function ObjectCard(props){
                 <label>{props.name}</label>
                 <small>{props.desc}</small>
             </div>
-            <Properties type={props.type}></Properties>  
-            
+            <div className="properties">
+                <Properties type={props.type}></Properties>   
+            </div>
         </div>
         )
     

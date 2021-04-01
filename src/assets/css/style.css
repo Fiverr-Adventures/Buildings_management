@@ -293,7 +293,10 @@ small {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: solid 1px;
+  width: 100%;
+  margin-bottom: 33px;
+  padding: 17px 44px 28px 27px;
+  border-radius: 22px;
 }
 
 .objectCard .objectInfo {
@@ -314,18 +317,33 @@ small {
   color: #b1b3b7;
 }
 
-.objectCard .objectInfo .building {
+.objectCard .properties .elem {
+  width: 97px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  gap: 7.5px;
-  width: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.objectCard .properties .elem span {
+  color: #3a3b3c;
+  margin-left: auto;
+}
+
+.objectCard .properties .people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
 }
 
 .customCard {
