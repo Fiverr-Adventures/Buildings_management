@@ -251,7 +251,7 @@ label {
   font-size: 24px;
 }
 
-button {
+.buttonText {
   font-family: "SFPro Bold";
   font-size: 20px;
   font-weight: bold;
@@ -262,7 +262,22 @@ button {
   font-size: 20px;
 }
 
-.search {
+::-webkit-input-placeholder {
+  font-family: "SFPro Regular";
+  font-size: 20px;
+}
+
+:-ms-input-placeholder {
+  font-family: "SFPro Regular";
+  font-size: 20px;
+}
+
+::-ms-input-placeholder {
+  font-family: "SFPro Regular";
+  font-size: 20px;
+}
+
+::placeholder {
   font-family: "SFPro Regular";
   font-size: 20px;
 }
@@ -336,6 +351,10 @@ small {
   margin-left: auto;
 }
 
+.objectCard .properties .elem p {
+  color: #fd9493;
+}
+
 .objectCard .properties .people {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -370,5 +389,69 @@ small {
           align-items: center;
   padding: 44px 0px 50px;
   width: 100%;
+}
+
+form {
+  width: 100%;
+  height: 51px;
+  margin: 0 0 24px;
+  padding: 12px 0px 12px 18px;
+  border-radius: 64px;
+  border: solid 1px #b1b3b7;
+  background-color: #191919;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form button {
+  all: unset;
+  margin-right: 23px;
+}
+
+form input {
+  all: unset;
+  width: 90%;
+  font-size: 20px;
+}
+
+form {
+  width: 100%;
+  height: 51px;
+  margin: 0 0 24px;
+  padding: 12px 0px 12px 18px;
+  border-radius: 64px;
+  border: solid 1px #b1b3b7;
+  background-color: #191919;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form button {
+  all: unset;
+  margin-right: 23px;
+}
+
+form input {
+  all: unset;
+  width: 90%;
+  font-size: 20px;
+}
+
+.home {
+  width: 90%;
+  height: 1040px;
+  border-radius: 75px;
+  background-color: #3a3b3c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

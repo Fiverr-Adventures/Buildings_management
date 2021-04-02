@@ -14,18 +14,18 @@ export default function ObjectCard(props){
                     </div>
                     <div className="elem">
                         <span className="medium">{props.door}</span>
-                        <img src={Door} alt={Door} /> 
+                        <img src={Door} /> 
                     </div>
                 </div>
             )
         else if (props.type === "groups")
             return (
-                <div>
-                    <div>
-                        <p className="medium">{props.AdminPanel}</p>
-                        <img src={AdminPanel}  />
+                <div className="people">
+                    <div className="elem">
+                        <p className="medium">{props.adminPanel}</p>
+                        {props.adminPanel ? <img src={AdminPanel} /> : <></> }
                     </div>
-                    <div>
+                    <div className="elem">
                         <span className="medium">{props.door}</span>
                         <img src={Door}  /> 
                     </div>
@@ -39,7 +39,7 @@ export default function ObjectCard(props){
             return (
                 <div className="elem">
                     <span className="medium">{props.door}</span>
-                    <img src={Door} alt={Door} /> 
+                    <img src={Door} /> 
                 </div>
             )
         else {

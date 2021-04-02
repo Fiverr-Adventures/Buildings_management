@@ -34,7 +34,7 @@ label {
     font-family: $font-primary-medium;
     font-size: 24px;
 }
-button {
+.buttonText {
     font-family: $font-primary-bold;
     font-size: 20px;
     font-weight: bold;
@@ -43,7 +43,7 @@ button {
     font-family: $font-primary-medium;
     font-size: 20px;
 }
-.search {
+::placeholder {
     font-family: $font-primary-regular;
     font-size: 20px;
 }

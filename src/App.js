@@ -8,8 +8,9 @@ import '../src/assets/css/style.css';
 import SideBar from "../src/components/sideBar";
 import People from "./pages/people";
 import Buildings from "./pages/buildings";
-// import Groups from "./pages/groups";
-// import Doors from "./pages/doors";
+import Groups from "./pages/groups";
+import Doors from "./pages/doors";
+import Home from "./pages/home";
 function App() {
   
   return (
@@ -18,21 +19,21 @@ function App() {
     // </>
     <Router>
         <Switch>
-        {/* <Route path='/Home'>
+        <Route path='/Home'>
             <Home />
-        </Route> */}
+        </Route>
         <Route path='/People'>
              <People />
         </Route>
         <Route path='/Buildings'>
              <Buildings />
         </Route>
-        {/* <Route path='/Groups'>
+        <Route path='/Groups'>
              <Groups />
         </Route>
         <Route path='/Doors'>
              <Doors />
-        </Route> */}
+        </Route>
         </Switch>
     </Router>
   );
