@@ -4,6 +4,7 @@
     margin-bottom: 33px;
     padding: 17px 44px 28px 27px;
     border-radius: 22px;
+    gap: 10px;
     // background-color: $charcoal-grey;
     .objectInfo {
         display: flex;
@@ -17,7 +18,7 @@
     }
     .properties {
         .elem{
-            width: 97px;
+            // width: 97px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -27,6 +28,9 @@
                 margin-left: auto
                 // color: $charcoal-grey;
             }
+        }
+        .adminPanel{
+            width: 265px;
             p{
                 color: $peachy-pink;
             }

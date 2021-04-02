@@ -1,0 +1,14 @@
+.pageHeader {
+    @include flex(space-between, center);
+    width: 70%;
+    margin-bottom: 22px;
+    button {
+        height: 42px;
+        padding: 6px 12px 9px 13px;
+        border-radius: 34px;
+        border: solid 2px $dark-sky-blue;
+        background-color: $black;
+        color: $dark-sky-blue;
+        @include ripple-effect($dark-sky-blue);
+    }
+}

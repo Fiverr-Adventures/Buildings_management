@@ -36,5 +36,16 @@ export const groups = [
         adminPanel: "",
         door: "11"
     },
-    
+    {
+        name: "Witte Hall: Floor 1 Doors",
+        desc: "Desc: All doors on floor 1",
+        adminPanel: "",
+        door: "45"
+    },
+    {
+        name: "Van Hise Hall: English Wing Offices",
+        desc: "Desc: English Offices",
+        adminPanel: "",
+        door: "37"
+    },
 ]

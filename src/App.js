@@ -14,27 +14,24 @@ import Home from "./pages/home";
 function App() {
   
   return (
-    // <>
-    //   <CustomCard/>
-    // </>
-    <Router>
-        <Switch>
-        <Route path='/Home'>
-            <Home />
-        </Route>
-        <Route path='/People'>
-             <People />
-        </Route>
-        <Route path='/Buildings'>
-             <Buildings />
-        </Route>
-        <Route path='/Groups'>
-             <Groups />
-        </Route>
-        <Route path='/Doors'>
-             <Doors />
-        </Route>
-        </Switch>
+     <Router>
+          <Switch>
+               <Route path='/Home'>
+                    <Home />
+               </Route>
+               <Route path='/People'>
+                    <People />
+               </Route>
+               <Route path='/Buildings'>
+                    <Buildings />
+               </Route>
+               <Route path='/Groups'>
+                    <Groups />
+               </Route>
+               <Route path='/Doors'>
+                    <Doors />
+               </Route>
+          </Switch>
     </Router>
   );
 }

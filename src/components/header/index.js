@@ -1,8 +1,8 @@
 export default function Header(props){
     return (
-        <div>
+        <div className="pageHeader">
             <h3>{props.title}</h3>
-            <button></button>
+            <button className="buttonText">{props.add}</button>
         </div>
     )
 }

@@ -1,9 +1,27 @@
 .sideBar{
     background-color: $black;
     padding-top: 52px;
-    border: 1px red solid;
-    img {
+    z-index: 1;
+    position: relative;
+    height: 1085px;
+    // .item{
+    //     display: block;
+    //     padding: 0 28px 45px;
+    // } 
+    svg {
         display: block;
-        padding: 0 28px 45px;
-    }
+        margin: 0 28px 45px;
+        &.active{
+            path{
+                stroke:white;
+            }
+        }
+        // &:hover{
+        //     path{
+        //         stroke:blue;
+        //     }
+    
+        // }
+    } 
 }
+// after 

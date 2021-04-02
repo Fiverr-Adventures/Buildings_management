@@ -290,12 +290,18 @@ small {
 .sideBar {
   background-color: #191919;
   padding-top: 52px;
-  border: 1px red solid;
+  z-index: 1;
+  position: relative;
+  height: 1085px;
 }
 
-.sideBar img {
+.sideBar svg {
   display: block;
-  padding: 0 28px 45px;
+  margin: 0 28px 45px;
+}
+
+.sideBar svg.active path {
+  stroke: white;
 }
 
 .objectCard {
@@ -312,6 +318,7 @@ small {
   margin-bottom: 33px;
   padding: 17px 44px 28px 27px;
   border-radius: 22px;
+  gap: 10px;
 }
 
 .objectCard .objectInfo {
@@ -333,7 +340,6 @@ small {
 }
 
 .objectCard .properties .elem {
-  width: 97px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,7 +357,11 @@ small {
   margin-left: auto;
 }
 
-.objectCard .properties .elem p {
+.objectCard .properties .adminPanel {
+  width: 265px;
+}
+
+.objectCard .properties .adminPanel p {
   color: #fd9493;
 }
 
@@ -371,12 +381,22 @@ small {
   padding: 16px 18px 18px;
   border-radius: 32px;
   background-color: #191919;
-  border: solid 1px;
+  overflow: auto;
+  -ms-overflow-style: none;
+}
+
+.customCard::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.customCard::-webkit-scrollbar-thumb {
+  background-color: #3a3b3c;
+  border-radius: 32px;
 }
 
 .page {
   background-color: #121212;
-  border-radius: 75px;
+  border-radius: 75px 0 0 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,7 +408,11 @@ small {
       -ms-flex-align: center;
           align-items: center;
   padding: 44px 0px 50px;
-  width: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 98px;
+  right: 0;
 }
 
 form {
@@ -415,33 +439,61 @@ form input {
   font-size: 20px;
 }
 
-form {
-  width: 100%;
-  height: 51px;
-  margin: 0 0 24px;
-  padding: 12px 0px 12px 18px;
-  border-radius: 64px;
-  border: solid 1px #b1b3b7;
-  background-color: #191919;
+.pageHeader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  margin-bottom: 22px;
 }
 
-form button {
-  all: unset;
-  margin-right: 23px;
+.pageHeader button {
+  height: 42px;
+  padding: 6px 12px 9px 13px;
+  border-radius: 34px;
+  border: solid 2px #2491ea;
+  background-color: #191919;
+  color: #2491ea;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
 }
 
-form input {
-  all: unset;
-  width: 90%;
-  font-size: 20px;
+.pageHeader button::before {
+  content: "";
+  position: absolute;
+  background-color: #2491ea;
+  padding: 50%;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(2);
+          transform: translate(-50%, -50%) scale(2);
+  opacity: 0;
+  -webkit-transition: opacity 700ms, -webkit-transform 700ms;
+  transition: opacity 700ms, -webkit-transform 700ms;
+  transition: transform 700ms, opacity 700ms;
+  transition: transform 700ms, opacity 700ms, -webkit-transform 700ms;
+  pointer-events: none;
+}
+
+.pageHeader button:active::before {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
 }
 
 .home {
   width: 90%;
-  height: 1040px;
+  height: 991px;
   border-radius: 75px;
   background-color: #3a3b3c;
   display: -webkit-box;
@@ -453,5 +505,12 @@ form input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.customContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

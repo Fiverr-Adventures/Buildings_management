@@ -4,5 +4,13 @@
     padding: 16px 18px 18px;
     border-radius: 32px;
     background-color: $black;
-    border: solid 1px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $charcoal-grey;
+        border-radius: 32px;
+    }
 }

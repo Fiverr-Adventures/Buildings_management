@@ -21,7 +21,7 @@ export default function ObjectCard(props){
         else if (props.type === "groups")
             return (
                 <div className="people">
-                    <div className="elem">
+                    <div className="adminPanel elem">
                         <p className="medium">{props.adminPanel}</p>
                         {props.adminPanel ? <img src={AdminPanel} /> : <></> }
                     </div>
