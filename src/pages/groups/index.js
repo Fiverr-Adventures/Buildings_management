@@ -6,11 +6,6 @@ import Header from "../../components/header";
 import SideBar from "../../components/sideBar";
 
 export default function Groups() {
-    const divStyle={
-        overflowY: 'auto',
-        width:'70%',
-        height:'900px',
-      };
     return (
          <Container style={{maxWidth: "1920px"}}>
              <SideBar>

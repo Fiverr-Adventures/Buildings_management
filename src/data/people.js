@@ -35,5 +35,23 @@ export const people = [
         desc: "Student",
         vpnKey: "1",
         door: "8"
+    },
+    {
+        name: "Laurie maniani",
+        desc: "Student",
+        vpnKey: "1",
+        door: "8"
+    },
+    {
+        name: "Laurie zakkar",
+        desc: "Student",
+        vpnKey: "1",
+        door: "8"
+    },
+    {
+        name: "Laurie hamid",
+        desc: "Student",
+        vpnKey: "1",
+        door: "8"
     }
 ]

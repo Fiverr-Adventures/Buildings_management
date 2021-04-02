@@ -450,19 +450,23 @@ small {
 
 .customCard {
   width: 70%;
-  height: 900px;
-  padding: 16px 18px 18px;
+  padding: 16px 6px 18px 18px;
   border-radius: 32px;
   background-color: #191919;
+}
+
+.customCard .object-list {
+  height: 794px;
   overflow: auto;
   -ms-overflow-style: none;
 }
 
-.customCard::-webkit-scrollbar {
+.customCard .object-list::-webkit-scrollbar {
   background-color: transparent;
+  width: 12px;
 }
 
-.customCard::-webkit-scrollbar-thumb {
+.customCard .object-list::-webkit-scrollbar-thumb {
   background-color: #3a3b3c;
   border-radius: 32px;
 }

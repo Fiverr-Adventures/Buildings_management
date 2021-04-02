@@ -33,5 +33,20 @@ export const doors = [
         desc: "Interior Private",
         activity: animatedActivity
     },
+    {
+        name: "Witte Hall: Room 1337",
+        desc: "Interior Private",
+        activity: animatedActivity
+    },
+    {
+        name: "Witte Hall: Room 13",
+        desc: "Interior Private",
+        activity: animatedActivity
+    },
+    {
+        name: "Witte Hall: Room 37",
+        desc: "Interior Private",
+        activity: animatedActivity
+    },
     
 ]

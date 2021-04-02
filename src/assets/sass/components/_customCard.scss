@@ -1,16 +1,19 @@
 .customCard {
-    width: 70%;
-    height: 900px;
-    padding: 16px 18px 18px;
-    border-radius: 32px;
-    background-color: $black;
+  width: 70%;
+  padding: 16px 6px 18px 18px;
+  border-radius: 32px;
+  background-color: $black;
+  .object-list{
+    height: 794px;
     overflow: auto;
     -ms-overflow-style: none;
     &::-webkit-scrollbar {
         background-color: transparent;
+        width: 12px;
     }
     &::-webkit-scrollbar-thumb {
         background-color: $charcoal-grey;
         border-radius: 32px;
-    }
+    }   
+  }
 }

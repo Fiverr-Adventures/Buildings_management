@@ -8,9 +8,16 @@ import SplashScreen from "../../assets/icons/Lottie JSON/Splash-screen.json";
 export default function Home() {
     const [showLoader, setshowLoader] = useState(true);
 
-    useEffect(() => {
-       setshowLoader(false);
-    });
+    useEffect(
+        () => {
+          let timer1 = setTimeout(() => setshowLoader(false),2500);
+    
+          return () => {
+            clearTimeout(timer1);
+          };
+        },
+        []
+      );
 
     const defaultOptions = {
         loop: false,

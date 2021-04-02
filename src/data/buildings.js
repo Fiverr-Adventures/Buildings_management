@@ -30,4 +30,19 @@ export const buildings = [
         desc: "Dept. of Engineering",
         door: "121"
     },
+    {
+        name: "Engineering ",
+        desc: "Dept. of Engineering",
+        door: "122"
+    },
+    {
+        name: "Engineering Commons",
+        desc: "Dept. of Engineering",
+        door: "121"
+    },
+    {
+        name: "Engineering Hall",
+        desc: "Dept. of Engineering",
+        door: "124"
+    },
 ]

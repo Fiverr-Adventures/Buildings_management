@@ -89,6 +89,7 @@ export default function SideBar(props) {
                                 <path id="Tracé_23" data-name="Tracé 23" d="M0,0H36V36H0Z" fill="rgba(0,0,0,0)"/>
                                 <path id="Tracé_24" data-name="Tracé 24" d="M27,27V4.5H21V3H6V27H3v3H21V7.5h3V30h6V27Zm-9,0H9V6h9ZM13.5,15h3v3h-3Z" transform="translate(1.5 1.5)" fill="#3a3b3c"/>
                             </svg>
+                            <p className="linkDesc ">Doors</p>
                         </div>
                     </Link>
                     <Link to="/buildings" onClick={ () => handleOnClick(4) } >

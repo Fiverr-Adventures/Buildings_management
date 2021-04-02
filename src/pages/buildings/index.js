@@ -26,7 +26,6 @@ export default function Buildings() {
              <SideBar>
                <Page>
                     <Header title="Buildings" add="Add Building"/>
-                    {/* <CustomScrollbars  style={{height: "900px"}}> */}
                     <CustomCard objects={buildings} type="buildings"/>
                     {/* </CustomScrollbars> */}
                 </Page>  
