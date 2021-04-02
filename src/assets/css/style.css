@@ -305,7 +305,7 @@ small {
   stroke: white;
 }
 
-.sideBar .svgSide.active #Tracé_24 {
+.sideBar .svgSide.active #Tracé_24, .sideBar .svgSide.active #Tracé_33, .sideBar .svgSide.active #Tracé_37 {
   fill: white;
 }
 
@@ -318,7 +318,7 @@ small {
   stroke: #178fed;
 }
 
-.sideBar .svgSide:hover #Tracé_24 {
+.sideBar .svgSide:hover #Tracé_24, .sideBar .svgSide:hover #Tracé_33, .sideBar .svgSide:hover #Tracé_37 {
   fill: #178fed;
 }
 
