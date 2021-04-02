@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -295,13 +296,59 @@ small {
   height: 1085px;
 }
 
-.sideBar svg {
+.sideBar .svgSide {
   display: block;
   margin: 0 28px 45px;
 }
 
-.sideBar svg.active path {
+.sideBar .svgSide.active #Tracé_14, .sideBar .svgSide.active #Tracé_15, .sideBar .svgSide.active #Tracé_16, .sideBar .svgSide.active #Tracé_17, .sideBar .svgSide.active #Tracé_18 {
   stroke: white;
+}
+
+.sideBar .svgSide.active #Tracé_24 {
+  fill: white;
+}
+
+.sideBar .svgSide.active circle {
+  stroke: white;
+  fill: white;
+}
+
+.sideBar .svgSide:hover #Tracé_14, .sideBar .svgSide:hover #Tracé_15, .sideBar .svgSide:hover #Tracé_16, .sideBar .svgSide:hover #Tracé_17, .sideBar .svgSide:hover #Tracé_18 {
+  stroke: #178fed;
+}
+
+.sideBar .svgSide:hover #Tracé_24 {
+  fill: #178fed;
+}
+
+.sideBar .svgSide:hover circle {
+  stroke: #178fed;
+  fill: #178fed;
+}
+
+.sideBar .linkWrapper {
+  position: relative;
+}
+
+.sideBar .linkWrapper:hover .linkDesc {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sideBar .linkDesc {
+  font-family: "SFPro Regular";
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 76px;
+  color: #178fed;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .2s, visibility .2s;
+  transition: opacity .2s, visibility .2s;
+  z-index: 10;
 }
 
 .objectCard {
@@ -319,6 +366,32 @@ small {
   padding: 17px 44px 28px 27px;
   border-radius: 22px;
   gap: 10px;
+}
+
+.objectCard:hover {
+  background-color: #3a3b3c;
+}
+
+.objectCard:hover .objectInfo small {
+  color: #178fed;
+}
+
+.objectCard:hover span {
+  color: #178fed;
+}
+
+.objectCard:hover .properties .elem span {
+  color: #178fed;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.objectCard:hover .properties .elem .svgKey #Tracé_30 {
+  fill: #178fed;
+}
+
+.objectCard:hover .properties .elem .svgKey #Tracé_24 {
+  fill: #178fed;
 }
 
 .objectCard .objectInfo {

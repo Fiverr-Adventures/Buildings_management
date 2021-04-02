@@ -1,37 +1,37 @@
-import Alert from "../assets/icons/svg/alert-circle.svg";
-import Help from "../assets/icons/svg/help.svg";
-import Activity from "../assets/icons/svg/activity.svg";
+import animatedAlert from '../assets/icons/Lottie JSON/alertCircle-red.json';
+import animatedHelp from '../assets/icons/Lottie JSON/alertCircle.json';
+import animatedActivity from '../assets/icons/Lottie JSON/activity-green.json';
 
 export const doors = [
     {
         name: "Wendt Commons: North Entrance",
         desc: "Building Entrance",
-        activity: Alert
+        activity: animatedAlert 
     },
     {
         name: "Wendt Commons: East Entrance",
         desc: "Building Entrance",
-        activity: Help
+        activity: animatedHelp 
     },
     {
         name: "Wendt Commons: Room 101",
         desc: "Interior Publics",
-        activity: Activity
+        activity: animatedActivity
     },
     {
         name: "Witte Hall: North Entrance",
         desc: "Building Entrance",
-        activity: Activity
+        activity: animatedActivity
     },
     {
         name: "Witte Hall: Floor 4 Den",
         desc: "Interior Public",
-        activity: Activity
+        activity: animatedActivity
     },
     {
         name: "Witte Hall: Room 432",
         desc: "Interior Private",
-        activity: Activity
+        activity: animatedActivity
     },
     
 ]

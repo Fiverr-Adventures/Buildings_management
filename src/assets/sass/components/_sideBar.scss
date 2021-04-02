@@ -8,20 +8,57 @@
     //     display: block;
     //     padding: 0 28px 45px;
     // } 
-    svg {
+    .svgSide{
         display: block;
         margin: 0 28px 45px;
         &.active{
-            path{
+            // border: solid red;
+            #Tracé_14,#Tracé_15,#Tracé_16,#Tracé_17, #Tracé_18   {
                 stroke:white;
             }
+            #Tracé_24{
+                fill: white;
+            }
+            circle {
+                stroke: white;
+                fill: white;
+            }
         }
-        // &:hover{
-        //     path{
-        //         stroke:blue;
-        //     }
-    
-        // }
-    } 
+        &:hover{
+            #Tracé_14,#Tracé_15,#Tracé_16,#Tracé_17, #Tracé_18 {
+                stroke: $azure;
+                
+            }
+            #Tracé_24{
+                fill: $azure;
+            }
+            circle {
+                stroke: $azure;
+                fill: $azure;
+            }
+        }
+    }
+    .linkWrapper{
+        position: relative;
+        &:hover{
+            .linkDesc{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    .linkDesc {
+        font-family: $font-primary-regular;
+        font-size: 24px;
+        position: absolute;
+        top: 10px;
+        bottom: 0;
+        left: 76px;
+        color: $azure;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .2s, visibility .2s;
+        z-index: 10;
+    }
 }
 // after 

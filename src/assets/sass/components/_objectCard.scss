@@ -5,7 +5,33 @@
     padding: 17px 44px 28px 27px;
     border-radius: 22px;
     gap: 10px;
-    // background-color: $charcoal-grey;
+    &:hover {
+        background-color: $charcoal-grey;
+        .objectInfo{
+            small{
+                color: $azure;
+            }
+        }
+        span{
+            color: $azure;
+        }
+        .properties {
+            .elem{
+                span{
+                    color: $azure;
+                    transition: color 300ms ease-in-out;
+                }
+                .svgKey {
+                    #Tracé_30{
+                       fill: $azure;
+                    }
+                    #Tracé_24{
+                        fill: $azure;
+                    }
+                }
+            }
+        }
+    }
     .objectInfo {
         display: flex;
         flex-direction: column;
