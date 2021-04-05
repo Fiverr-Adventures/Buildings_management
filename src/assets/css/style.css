@@ -366,6 +366,7 @@ small {
   padding: 17px 44px 28px 27px;
   border-radius: 22px;
   gap: 10px;
+  cursor: pointer;
 }
 
 .objectCard:hover {
