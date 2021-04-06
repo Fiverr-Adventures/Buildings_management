@@ -48,7 +48,7 @@ export default function ObjectCard(props){
                 <div className="people">
                     <div className="adminPanel elem">
                         <p className="medium">{props.adminPanel}</p>
-                        {props.adminPanel ? <img src={AdminPanel} /> : <></> }
+                        {props.adminPanel ? <img src={AdminPanel} alt="admin"/> : <></> }
                     </div>
                     <div className="elem">
                         <span className="medium">{props.door}</span>

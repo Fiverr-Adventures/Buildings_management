@@ -1,12 +1,5 @@
-import Home from "../../assets/icons/svg/home.svg";
-import People from "../../assets/icons/svg/people.svg";
-import Groups from "../../assets/icons/svg/groups.svg";
-import Doors from "../../assets/icons/svg/doors.svg";
-import Buildings from "../../assets/icons/svg/buildings.svg";
-import Activity from "../../assets/icons/svg/activity.svg";
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import { Link } from 'react-router-dom';
-// import {  } from "b";
 let arr = [true,false,false,false,false];
 
 export default function SideBar(props) {

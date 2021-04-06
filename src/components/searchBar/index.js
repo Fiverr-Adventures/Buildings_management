@@ -4,12 +4,9 @@ export default function SearchBar() {
     return (
         <form>
             <button type="submit">
-                <img src={Search} />
+                <img src={Search} alt="search"/>
             </button>
             <input type="text"  placeholder="Search" />
         </form>
-    //    {/* <button class="clear_icon" type="reset">
-    //           <img  src={Clear}>
-    //    </button> */}
     )
 }

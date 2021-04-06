@@ -11,10 +11,7 @@ import Groups from "./pages/groups";
 import Doors from "./pages/doors";
 import Home from "./pages/home";
 
-
 function App() {
-
-
 
   return (
      <Router>
