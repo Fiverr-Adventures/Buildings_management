@@ -17,8 +17,8 @@ export default function ObjectCard(props){
       return (
         <Lottie 
             options={defaultOptions}
-            height={32}
-            width={32}
+            height={50}
+            width={50}
         />
       )
     }
@@ -45,8 +45,8 @@ export default function ObjectCard(props){
             )
         else if (props.type === "groups")
             return (
-                <div className="people">
-                    <div className="adminPanel elem">
+                <div className="people people_g">
+                    <div className="adminPanel elem ">
                         <p className="medium">{props.adminPanel}</p>
                         {props.adminPanel ? <img src={AdminPanel} alt="admin"/> : <></> }
                     </div>

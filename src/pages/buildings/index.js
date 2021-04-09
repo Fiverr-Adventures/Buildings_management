@@ -8,7 +8,7 @@ import SideBar from "../../components/sideBar";
 export default function Buildings() {
       
     return (
-         <Container style={{maxWidth: "1920px"}}>
+         <Container style={{maxWidth: "100%", paddingRight: "0",paddingLeft: "0" }}>
              <SideBar>
                <Page>
                     <Header title="Buildings" add="Add Building"/>

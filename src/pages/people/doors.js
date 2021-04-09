@@ -1,4 +1,4 @@
-import animatedAlert from '../assets/icons/Lottie JSON/alertCircle-red.json';
+import animatedAlert from '../assets/icons/Lottie JSON/style={{maxWidth: "100%", paddingRight: "0",paddingLeft: "0" }}-red.json';
 import animatedHelp from '../assets/icons/Lottie JSON/warningCircle-yellow.json';
 import animatedActivity from '../assets/icons/Lottie JSON/activity-green.json';
 

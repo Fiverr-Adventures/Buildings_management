@@ -1,10 +1,13 @@
 .customCard {
+  max-width: 1700px;
   width: 70%;
   padding: 16px 6px 18px 18px;
   border-radius: 32px;
   background-color: $black;
+  height: 90%;
   .object-list{
-    height: 794px;
+    // height: 794px;
+    height: 88%;
     overflow: auto;
     -ms-overflow-style: none;
     &::-webkit-scrollbar {

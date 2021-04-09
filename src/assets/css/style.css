@@ -414,6 +414,7 @@ small {
 }
 
 .objectCard .properties .elem {
+  width: 97px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -446,18 +447,24 @@ small {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 40px;
+  gap: 100px;
+}
+
+.objectCard .properties .people_g {
+  gap: 45px;
 }
 
 .customCard {
+  max-width: 1700px;
   width: 70%;
   padding: 16px 6px 18px 18px;
   border-radius: 32px;
   background-color: #191919;
+  height: 90%;
 }
 
 .customCard .object-list {
-  height: 794px;
+  height: 88%;
   overflow: auto;
   -ms-overflow-style: none;
 }
@@ -491,6 +498,7 @@ small {
   top: 0;
   left: 98px;
   right: 0;
+  bottom: 0;
 }
 
 form {
@@ -570,8 +578,9 @@ form input {
 }
 
 .home {
+  max-width: 1700px;
   width: 90%;
-  height: 991px;
+  height: 100%;
   border-radius: 75px;
   background-color: #3a3b3c;
   display: -webkit-box;

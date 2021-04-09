@@ -30,13 +30,14 @@ export default function Home() {
         }
       };
     return (
-         <Container style={{maxWidth: "1920px"}}>
-               { showLoader ? <Page style={{position: "relative",
+         <Container style={{maxWidth: "100%", paddingRight: "0",paddingLeft: "0"}}>
+               { showLoader ? <Page style={{position: "absolute",
                                             zIndex: 2,
                                             top: "0", 
                                             left: "0",
                                             right: "0",
-                                            borderRadius:"0"
+                                            borderRadius:"0",
+                                            bottom: "0"
                                         }}> 
                         <Lottie 
                         options={defaultOptions}

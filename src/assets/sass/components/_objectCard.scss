@@ -45,7 +45,7 @@
     }
     .properties {
         .elem{
-            // width: 97px;
+            width: 97px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -65,7 +65,10 @@
         .people {
             display: flex;
             justify-content: space-between;
-            gap: 40px;
+            gap: 100px;
+        }
+        .people_g{
+            gap: 45px;
         }
     }
 }

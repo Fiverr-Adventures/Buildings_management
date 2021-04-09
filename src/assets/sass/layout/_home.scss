@@ -1,6 +1,7 @@
 .home{
+    max-width: 1700px;
     width:90%;
-    height: 991px;
+    height: 100%;
     border-radius: 75px;
     background-color: $charcoal-grey;
     @include flex(center, center);
