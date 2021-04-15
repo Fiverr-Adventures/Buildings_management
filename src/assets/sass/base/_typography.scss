@@ -30,7 +30,12 @@ h3 {
     font-family: $font-primary-medium;
     font-size: 48px;
 }
-label {
+h4 {
+    font-family: $font-primary-regular;
+    font-size: 32px;
+    line-height: 1.34;
+}
+.label {
     font-family: $font-primary-medium;
     font-size: 24px;
 }
@@ -51,17 +56,46 @@ small {
     font-family: $font-primary-medium;
     font-size: 16px;
 }
+big {
+    font-family: $font-primary-regular;
+    font-size: 32px;
+    line-height: 0.94;
+}
+label {
+    font-family: $font-primary-regular;
+    font-size: 28px;
+    line-height: 1.32;
+}
+.label-2 {
+    font-family: $font-primary-medium;
+    font-size: 24px;
+    line-height: 1.33;
+}
+.b-text-b {
+    font-family: $font-primary-bold;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.35;
+}
+.b-text-m {
+    font-family: $font-primary-medium;
+    font-size: 24px;
+    line-height: 1.33;
+}
+.large {
+    font-family: $font-primary-regular;
+    font-size: 22px;
+    line-height: 1.36;
+}
+.b-text-s {
+    font-family: SFPro;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.35;
+}
+.b-text-r {
+    font-family: SFPro;
+    font-size: 20px;
+    line-height: 1.35;
+}
 
-// How typogrraphy should looks like on mobile version
-@include for-size(desktop-down){
-            
-}
-@include for-size(tablet-landscape-down){
-    
-}
-@include for-size(tablet-portrait-down){
-    
-}
-@include for-size(phone-only){
-    
-}

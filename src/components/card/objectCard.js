@@ -80,7 +80,7 @@ export default function ObjectCard(props){
     return (
         <div className="objectCard">
             <div className="objectInfo">
-                <label>{props.name}</label>
+                <p className="label">{props.name}</p>
                 <small>{props.desc}</small>
             </div>
             <div className="properties">

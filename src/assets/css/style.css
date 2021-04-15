@@ -247,7 +247,13 @@ h3 {
   font-size: 48px;
 }
 
-label {
+h4 {
+  font-family: "SFPro Regular";
+  font-size: 32px;
+  line-height: 1.34;
+}
+
+.label {
   font-family: "SFPro Medium";
   font-size: 24px;
 }
@@ -286,6 +292,56 @@ label {
 small {
   font-family: "SFPro Medium";
   font-size: 16px;
+}
+
+big {
+  font-family: "SFPro Regular";
+  font-size: 32px;
+  line-height: 0.94;
+}
+
+label {
+  font-family: "SFPro Regular";
+  font-size: 28px;
+  line-height: 1.32;
+}
+
+.label-2 {
+  font-family: "SFPro Medium";
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.b-text-b {
+  font-family: "SFPro Bold";
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.35;
+}
+
+.b-text-m {
+  font-family: "SFPro Medium";
+  font-size: 24px;
+  line-height: 1.33;
+}
+
+.large {
+  font-family: "SFPro Regular";
+  font-size: 22px;
+  line-height: 1.36;
+}
+
+.b-text-s {
+  font-family: SFPro;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.35;
+}
+
+.b-text-r {
+  font-family: SFPro;
+  font-size: 20px;
+  line-height: 1.35;
 }
 
 .sideBar {
@@ -405,7 +461,7 @@ small {
           flex-direction: column;
 }
 
-.objectCard .objectInfo label {
+.objectCard .objectInfo .label {
   margin-bottom: 0 !important;
 }
 
