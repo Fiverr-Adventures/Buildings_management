@@ -1,4 +1,65 @@
 @charset "UTF-8";
+.input_ {
+  height: 51px;
+  border-radius: 64px;
+  border: solid 1px #b1b3b7;
+  padding: 12px 16px;
+}
+
+.input_ input {
+  all: unset;
+  font-size: 20px;
+}
+
+.tag {
+  height: 42px;
+  padding: 6px 0;
+  background-color: #178fed;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 34px;
+}
+
+.s-button {
+  all: unset;
+  width: 133px;
+  height: 42px;
+  border-radius: 34px;
+  border: solid 2px #1daefc;
+  color: #178fed;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.s-button::before {
+  content: "";
+  position: absolute;
+  background-color: #1daefc;
+  padding: 50%;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(2);
+          transform: translate(-50%, -50%) scale(2);
+  opacity: 0;
+  -webkit-transition: opacity 700ms, -webkit-transform 700ms;
+  transition: opacity 700ms, -webkit-transform 700ms;
+  transition: transform 700ms, opacity 700ms;
+  transition: transform 700ms, opacity 700ms, -webkit-transform 700ms;
+  pointer-events: none;
+}
+
+.s-button:active::before {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -220,6 +281,7 @@ body {
   line-height: normal;
   letter-spacing: normal;
   color: #e4e6ea;
+  font-family: "SFPro Regular";
 }
 
 a {
@@ -640,28 +702,33 @@ form input {
 }
 
 .backdrop {
-  background-color: #191919;
+  position: fixed;
+  z-index: 100;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   width: 100%;
   height: 100%;
-  position: fixed;
   left: 0;
   top: 0;
 }
 
 .content-wrapper_ {
   position: fixed;
-  width: 60%;
-  height: 50%;
+  z-index: 500;
+  width: 55%;
+  height: 80%;
   border-radius: 135px;
-  background-color: white;
+  background-color: #000000;
   margin: auto;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 21px 59px 33px 83px;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  padding: 30px 55px 33px 83px;
+}
+
+.content-wrapper_ .content_ {
+  height: 100%;
 }
 
 .home {
@@ -681,46 +748,67 @@ form input {
           align-items: center;
 }
 
-.login-container {
+.modal-g h3 {
+  text-align: center;
+}
+
+.modal-g .parag {
+  color: #b1b3b7;
+}
+
+.modal-g .input-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: 1px solid;
+  margin-bottom: 54px;
 }
 
-.login-container .logo {
+.modal-g .input-details .group-input:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal-g .input-details .inputs {
+  width: 50%;
+}
+
+.modal-g .input-details .inputs .group-input p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal-g .input-details .inputs .group-input label {
+  color: #3a3b3c;
+}
+
+.modal-g .input-details .inputs .group-input .input-g {
+  width: 82%;
+}
+
+.modal-g .input-details .date-g {
+  margin-top: 31px;
+  margin-left: 68px;
+}
+
+.modal-g .input-details .date-g p:not(:last-child) {
+  margin-bottom: 44px;
+}
+
+.modal-g .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 119px;
+}
+
+.modal-g .tags .tag-g:not(:last-child) {
+  margin-right: 15px;
+}
+
+.modal-g .tags .tag-g {
+  width: 200px;
+}
+
+.modal-g .small-b {
   position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.login-container .login {
-  width: 500px;
-  height: 500px;
-  padding: 264px 100px 93px;
-  border-radius: 114px;
-  background-color: rgba(255, 255, 255, 0.9);
-  position: relative;
-  text-align: center;
-}
-
-.login-container .log-in {
-  width: 300px;
-  height: 60px;
-  border-radius: 50px;
-  background-color: #1daefc;
-  text-align: center;
-  color: #fff;
-}
-
-.login-container p {
-  color: #b1b3b7;
-  margin: 18px 0;
+  bottom: 33px;
 }
 /*# sourceMappingURL=style.css.map */

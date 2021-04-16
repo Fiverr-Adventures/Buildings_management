@@ -1,5 +1,6 @@
 import ObjectCard from "./objectCard";
-import SearchBar from "../searchBar"
+import SearchBar from "../searchBar";
+
 export default function CustomCard(props){
     let index = 0;
 

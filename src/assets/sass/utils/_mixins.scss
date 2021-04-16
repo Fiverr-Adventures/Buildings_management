@@ -132,3 +132,8 @@
 		pointer-events: all;
 	}
 }
+@mixin not-last-child($selector) {
+	& #{$selector}:not(:last-child) {
+	  @content;
+	}
+  }

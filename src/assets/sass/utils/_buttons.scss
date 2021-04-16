@@ -1,0 +1,10 @@
+.s-button {
+    all: unset;
+    width: 133px;
+    height: 42px;
+    border-radius: 34px;
+    border: solid 2px $azure-two;
+    color: $azure;
+    text-align: center;
+    @include ripple-effect($azure-two);
+}

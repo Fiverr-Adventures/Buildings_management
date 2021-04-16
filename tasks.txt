@@ -1,0 +1,7 @@
+what I learn :
+- add class in a parent component
+<div className={`input_ ${props.className}`} >
+what should I do :
+- filter proprty does not work like expected in modal
+- add animation for modal
+- overflow modal
