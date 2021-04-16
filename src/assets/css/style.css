@@ -332,14 +332,14 @@ label {
 }
 
 .b-text-s {
-  font-family: SFPro;
+  font-family: "SFPro Bold";
   font-size: 20px;
   font-weight: bold;
   line-height: 1.35;
 }
 
 .b-text-r {
-  font-family: SFPro;
+  font-family: "SFPro Regular";
   font-size: 20px;
   line-height: 1.35;
 }
@@ -631,6 +631,31 @@ form input {
   opacity: 1;
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
+}
+
+.backdrop {
+  background-color: #191919;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.content-wrapper_ {
+  position: fixed;
+  width: 60%;
+  height: 50%;
+  border-radius: 135px;
+  background-color: white;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 21px 59px 33px 83px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .home {

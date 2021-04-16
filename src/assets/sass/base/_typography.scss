@@ -88,14 +88,13 @@ label {
     line-height: 1.36;
 }
 .b-text-s {
-    font-family: SFPro;
+    font-family: $font-primary-bold;
     font-size: 20px;
     font-weight: bold;
     line-height: 1.35;
 }
 .b-text-r {
-    font-family: SFPro;
+    font-family: $font-primary-regular;
     font-size: 20px;
     line-height: 1.35;
 }
-
