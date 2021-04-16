@@ -344,6 +344,12 @@ label {
   line-height: 1.35;
 }
 
+.x-small {
+  font-family: "SFPro Medium";
+  font-size: 18px;
+  line-height: 1.33;
+}
+
 .sideBar {
   background-color: #191919;
   padding-top: 52px;
@@ -675,10 +681,46 @@ form input {
           align-items: center;
 }
 
-.customContainer {
+.login-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid;
+}
+
+.login-container .logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.login-container .login {
+  width: 500px;
+  height: 500px;
+  padding: 264px 100px 93px;
+  border-radius: 114px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  text-align: center;
+}
+
+.login-container .log-in {
+  width: 300px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #1daefc;
+  text-align: center;
+  color: #fff;
+}
+
+.login-container p {
+  color: #b1b3b7;
+  margin: 18px 0;
 }
 /*# sourceMappingURL=style.css.map */

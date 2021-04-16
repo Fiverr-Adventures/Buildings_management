@@ -1,0 +1,33 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    .logo {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .login {
+        width: 500px;
+        height: 500px;
+        padding: 264px 100px 93px;
+        border-radius: 114px;
+        background-color: rgba(255, 255, 255, 0.9);
+        position: relative;
+        text-align: center;
+    }
+    .log-in {
+        width: 300px;
+        height: 60px;
+        border-radius: 50px;
+        background-color: $azure-two;
+        text-align: center;
+        color: #fff;
+    }
+    p {
+        color: $cool-grey;
+        margin: 18px 0;
+        
+    }
+}
