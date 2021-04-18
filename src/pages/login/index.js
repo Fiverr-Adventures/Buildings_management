@@ -7,24 +7,27 @@ export default function index() {
         <Container style={{maxWidth: "100%", paddingRight: "0",paddingLeft: "0"}}>
             <div className="login-container">
                 <img src={Logo}  alt="logo" className="logo"/>
-                <div className="login">
-                    <button className="b-text-m log-in">
-                        Log in with Email
-                    </button>
-                    <p className= "x-small">or</p>
-                    <button className="x-small">
-                        Create an Account
-                    </button>
+                <div className="login-page">
                     <div className="Full-Glow-Orb">
-                        <div style={{   backgroundImage: `url(${FullGlowOrb})`, 
+                        <div className="welcome" style={{   backgroundImage: `url(${FullGlowOrb})`, 
                                         backgroundRepeat: 'no-repeat', 
-                                        width: "342px", height: "342px"}}>
+                                        width: "340px", height: "340px"}}>
                             <h4>Welcome</h4>
                             <p className="b-text-r">
                                 to the future of security
                             </p>
                         </div>
                     </div>
+                    <div className="login">
+                       <button className="b-text-m log-in">
+                            Log in with Email
+                        </button>
+                        <p className= "x-small">or</p>
+                        <button className="x-small sign-up">
+                            Create an Account
+                        </button> 
+                    </div>
+                    
                 </div>
             </div> 
         </Container>
