@@ -5,3 +5,7 @@ what should I do :
 - filter proprty does not work like expected in modal
 - add animation for modal
 - overflow modal
+- #000 =====> $black-two
+- for the upload file
+  https://medium.com/web-dev-survey-from-kyoto/how-to-customize-the-file-upload-button-in-react-b3866a5973d8
+today (Add Door(1h), Add Building(5h), login(2h) (8h))

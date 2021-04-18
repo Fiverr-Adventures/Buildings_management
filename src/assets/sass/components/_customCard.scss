@@ -8,6 +8,7 @@
   .object-list{
     height: 88%;
     overflow: auto;
+    padding-right: 4px;
     -ms-overflow-style: none;
     &::-webkit-scrollbar {
         background-color: transparent;

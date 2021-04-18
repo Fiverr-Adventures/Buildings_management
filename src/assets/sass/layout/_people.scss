@@ -1,0 +1,36 @@
+.modal-g {
+    .form {
+        height: calc(100% - 65px);
+        .desc {
+            .input-details {
+                margin-bottom: 45px;  
+                .inputs {
+                    .name {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        gap: 15px;
+                    }
+                }
+                .type-p {
+                    .type { color: $charcoal-grey}
+                    margin-left: 50px;
+                    @include not-last-child('.in-radio') {
+                        margin-bottom: 10px; 
+                    }
+                }
+                
+            }
+            .search-door {
+                p {
+                    color: $cool-grey;
+                }
+            }
+            .tags {.tag-p { width: 250px;}}
+        }
+        .c-dropdown {
+            width: 185px;
+            margin-bottom: 22px;
+        }
+    }
+}

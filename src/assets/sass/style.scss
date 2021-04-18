@@ -3,6 +3,8 @@
 @import "utils/inputs";
 @import "utils/tags";
 @import "utils/buttons";
+@import "utils/dropdown";
+@import "utils/input_radio";
 
 // 3 - Base;
 @import "base/reset";
@@ -16,8 +18,11 @@
 @import "components/search";
 @import "components/header";
 @import "components/modal";
+@import "components/addMany";
+@import "components/execMan";
 
 // 5 - Layout;
 @import "layout/home";
 // @import "layout/login";
 @import "layout/groups";
+@import "layout/people";

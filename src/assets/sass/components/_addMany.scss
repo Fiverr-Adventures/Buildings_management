@@ -1,0 +1,18 @@
+.add-many{
+    width:100%;
+    height: calc(100% - 113px);;
+    border-radius: 98px;
+    border: solid 4px $azure-two;
+    @include flex(center, center);
+    flex-direction: column;
+    // background: linear-gradient(to right, $azure-two 0%, $azure-two 50%, transparent 50%, transparent 100%) repeat-x left bottom;    
+    // background-size: 60px 4px;
+    label {
+        color: $cool-grey;
+        margin-bottom: 33px;
+    }
+    .or {
+        color: $charcoal-grey;
+        margin-bottom: 33px;
+    }
+  }

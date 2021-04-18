@@ -9,6 +9,7 @@
 .input_ input {
   all: unset;
   font-size: 20px;
+  width: 96%;
 }
 
 .tag {
@@ -58,6 +59,87 @@
   opacity: 1;
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
+}
+
+.dropdown-p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.dropdown-p label {
+  color: #3a3b3c;
+}
+
+.dropdown-p select {
+  height: 42px;
+  padding: 5px 6px 5px 16px;
+  border-radius: 34px;
+  border: solid 2px #b1b3b7;
+  background-color: #121212;
+  color: #b1b3b7;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none;
+  outline: none;
+  background: url("../icons/svg/dropDown.svg") no-repeat right;
+  background-origin: content-box;
+}
+
+.dropdown-p select * {
+  background-color: #121212;
+  font-size: unset;
+}
+
+.group-radio {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.group-radio input {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.group-radio .radio-look {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  padding: 2px;
+  border: solid 3px #b1b3b7;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 21px;
+}
+
+.group-radio .radio-look:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.group-radio .radio:checked + .radio-look:after {
+  background-color: #178fed;
 }
 
 * {
@@ -356,7 +438,7 @@ small {
   font-size: 16px;
 }
 
-big {
+.big {
   font-family: "SFPro Regular";
   font-size: 32px;
   line-height: 0.94;
@@ -590,6 +672,7 @@ label {
 .customCard .object-list {
   height: 88%;
   overflow: auto;
+  padding-right: 4px;
   -ms-overflow-style: none;
 }
 
@@ -716,19 +799,74 @@ form input {
   position: fixed;
   z-index: 500;
   width: 55%;
-  height: 80%;
+  height: 85%;
   border-radius: 135px;
-  background-color: #000000;
+  background-color: #121212;
   margin: auto;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 30px 55px 33px 83px;
+  padding: 30px 75px 33px 75px;
 }
 
 .content-wrapper_ .content_ {
   height: 100%;
+}
+
+.add-many {
+  width: 100%;
+  height: calc(100% - 113px);
+  border-radius: 98px;
+  border: solid 4px #1daefc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.add-many label {
+  color: #b1b3b7;
+  margin-bottom: 33px;
+}
+
+.add-many .or {
+  color: #3a3b3c;
+  margin-bottom: 33px;
+}
+
+.exec-man {
+  padding: 23px 33px 18px;
+  border-radius: 28px;
+  border: solid 2px #ef5350;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.exec-man span {
+  color: #178fed;
+}
+
+.exec-man .full_perm {
+  margin-top: 45px;
+  margin-bottom: 0;
 }
 
 .home {
@@ -748,6 +886,10 @@ form input {
           align-items: center;
 }
 
+.modal-g {
+  height: 100%;
+}
+
 .modal-g h3 {
   text-align: center;
 }
@@ -756,59 +898,98 @@ form input {
   color: #b1b3b7;
 }
 
-.modal-g .input-details {
+.modal-g .form .desc {
+  padding-right: 4px;
+}
+
+.modal-g .form .desc .input-details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 54px;
 }
 
-.modal-g .input-details .group-input:not(:last-child) {
-  margin-bottom: 10px;
+.modal-g .form .desc .input-details .group-input:not(:last-child) {
+  margin-bottom: 6px;
 }
 
-.modal-g .input-details .inputs {
-  width: 50%;
+.modal-g .form .desc .input-details .inputs {
+  width: 55%;
 }
 
-.modal-g .input-details .inputs .group-input p:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-.modal-g .input-details .inputs .group-input label {
+.modal-g .form .desc .input-details .inputs .group-input label {
   color: #3a3b3c;
 }
 
-.modal-g .input-details .inputs .group-input .input-g {
-  width: 82%;
-}
-
-.modal-g .input-details .date-g {
+.modal-g .form .desc .input-details .date-g {
   margin-top: 31px;
   margin-left: 68px;
 }
 
-.modal-g .input-details .date-g p:not(:last-child) {
+.modal-g .form .desc .input-details .date-g p:not(:last-child) {
   margin-bottom: 44px;
 }
 
-.modal-g .tags {
+.modal-g .form .desc .tags {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 119px;
 }
 
-.modal-g .tags .tag-g:not(:last-child) {
+.modal-g .form .desc .tags .tag-g:not(:last-child) {
   margin-right: 15px;
 }
 
-.modal-g .tags .tag-g {
+.modal-g .form .desc .tags .tag-g {
   width: 200px;
 }
 
-.modal-g .small-b {
+.modal-g .form .small-b {
   position: absolute;
   bottom: 33px;
+}
+
+.modal-g .form {
+  height: calc(100% - 65px);
+}
+
+.modal-g .form .desc .input-details {
+  margin-bottom: 45px;
+}
+
+.modal-g .form .desc .input-details .inputs .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+}
+
+.modal-g .form .desc .input-details .type-p {
+  margin-left: 50px;
+}
+
+.modal-g .form .desc .input-details .type-p .type {
+  color: #3a3b3c;
+}
+
+.modal-g .form .desc .input-details .type-p .in-radio:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal-g .form .desc .search-door p {
+  color: #b1b3b7;
+}
+
+.modal-g .form .desc .tags .tag-p {
+  width: 250px;
+}
+
+.modal-g .form .c-dropdown {
+  width: 185px;
+  margin-bottom: 22px;
 }
 /*# sourceMappingURL=style.css.map */

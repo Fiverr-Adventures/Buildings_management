@@ -1,0 +1,23 @@
+.dropdown-p {
+    label { color: $charcoal-grey; }
+    display: flex;
+    flex-direction: column;
+    select {
+        height: 42px;
+        padding: 5px 6px 5px 16px;
+        border-radius: 34px;
+        border: solid 2px $cool-grey;
+        background-color: $black-two;
+        color:  $cool-grey;
+        -moz-appearance:none; /* Firefox */
+        -webkit-appearance:none; /* Safari and Chrome */
+        appearance:none;
+        outline: none;
+        background: url("../icons/svg/dropDown.svg") no-repeat right;
+        background-origin: content-box;
+        * {
+            background-color:  $black-two;
+            font-size: unset;
+        }
+    }
+}

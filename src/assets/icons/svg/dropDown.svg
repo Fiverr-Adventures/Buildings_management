@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Groupe_57" data-name="Groupe 57" transform="translate(-1272 -27)">
+    <circle id="Ellipse_28" data-name="Ellipse 28" cx="16" cy="16" r="16" transform="translate(1272 27)" fill="#178fed"/>
+    <g id="keyboard_arrow_down-24px" transform="translate(1276 31)">
+      <path id="Tracé_34" data-name="Tracé 34" d="M0,0H24V24H0Z" fill="none"/>
+      <path id="Tracé_35" data-name="Tracé 35" d="M7.41,8.59,12,13.17l4.59-4.58L18,10l-6,6L6,10Z" transform="translate(0)" fill="#e4e6ea"/>
+    </g>
+  </g>
+</svg>

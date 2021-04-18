@@ -1,57 +1,55 @@
 .modal-g {
     h3 { text-align: center; }
-    // overflow: auto;
-    // -ms-overflow-style: none;
-    // &::-webkit-scrollbar {
-    //     background-color: transparent;
-    //     width: 12px;
-    // }
-    // &::-webkit-scrollbar-thumb {
-    //     background-color: $charcoal-grey;
-    //     border-radius: 135px;
-    // }
-    // height: 600px;
+    height: 100%;
     .parag {color: $cool-grey;}
-
-    .input-details {
-        display: flex;
-        margin-bottom: 54px;
-        @include not-last-child('.group-input') {
-            margin-bottom: 10px;
-        }
-        .inputs {
-            width: 50%;
-        .group-input {
-            @include not-last-child('p') {
-                margin-bottom: 10px; 
-            }
-            label { color: $charcoal-grey; }
-                .input-g{
-                    width: 82%;
+    .form {
+        // height: 100%;
+       .desc {
+            // overflow: auto;
+            // -ms-overflow-style: none;
+            // &::-webkit-scrollbar {
+            //     background-color: transparent;
+            //     width: 12px;
+            // }
+            // &::-webkit-scrollbar-thumb {
+            //     background-color: $charcoal-grey;
+            //     border-radius: 135px;
+            // }
+            // height:65%;
+            padding-right: 4px;
+            .input-details {
+                display: flex;
+                margin-bottom: 54px;
+                @include not-last-child('.group-input') {
+                    margin-bottom: 6px;
                 }
-            } 
-        }
-
-        .date-g {
-            margin-top: 31px;
-            margin-left: 68px;
-            @include not-last-child('p') {
-                margin-bottom: 44px;
+                .inputs {
+                    width: 55%;
+                .group-input {
+                    label { color: $charcoal-grey; }
+                        // .input-g{ width: 82%; }
+                    } 
+                }
+                .date-g {
+                    margin-top: 31px;
+                    margin-left: 68px;
+                    @include not-last-child('p') {
+                        margin-bottom: 44px;
+                    }
+                }
+            }
+            .tags {
+                display: flex;
+                @include not-last-child('.tag-g') {
+                    margin-right: 15px;
+                }
+                .tag-g{ width: 200px; }
             }
         }
-    }
-
-    .tags {
-        display: flex;
-        margin-bottom: 119px;
-        @include not-last-child('.tag-g') {
-            margin-right: 15px;
-        }
-        .tag-g{ width: 200px; }
-    }
-
-    .small-b {
-        position: absolute;
-        bottom: 33px;
+        .small-b {
+                // position: relative;
+                position: absolute;
+                bottom: 33px;
+        }   
     }
 }
