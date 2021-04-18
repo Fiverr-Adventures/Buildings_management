@@ -10,16 +10,16 @@ import Buildings from "./pages/buildings";
 import Groups from "./pages/groups";
 import Doors from "./pages/doors";
 import Home from "./pages/home";
-// import Login from "./pages/login";
+import Login from "./pages/login";
 
 function App() {
 
   return (
      <Router>
           <Switch>
-               {/* <Route path='/Login'>
+               <Route path='/Login'>
                     <Login />
-               </Route> */}
+               </Route>
                <Route path='/Home'>
                     <Home />
                </Route>

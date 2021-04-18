@@ -1,0 +1,32 @@
+.modal-g {
+    .h3 { margin-bottom: 45px; }
+    .form {
+        .desc {
+            .input-details {
+                .inputs {
+                    .building-d {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 13px;
+                        .build { width: calc(81% - 15px);}
+                        .floor{ width: 19%; }
+                    }
+                }
+                margin-bottom: 0;
+            }
+            .map-it {
+                label {color: $charcoal-grey;}
+                .map {
+                    border-radius: 42px;
+                    background-color: $black-two;
+                    padding: 18px 0 31px;
+                    text-align: center;
+                    width: 100%;
+                    img {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -22,14 +22,13 @@
                 
             }
             .search-door {
-                p {
-                    color: $cool-grey;
-                }
+                p {  color: $cool-grey; }
             }
             .tags {.tag-p { width: 250px;}}
         }
         .c-dropdown {
             width: 185px;
+            height: 42px;
             margin-bottom: 22px;
         }
     }

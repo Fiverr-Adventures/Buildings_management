@@ -11,7 +11,7 @@ import Input from "../../components/input";
 import Tag from '../../components/tags';
 import MyButton from '../../components/s_button';
 
-export default function Groups(props) {
+export default function Groups() {
 
   const [open, setOpen] = useState(true);
   const handleOpen = (isClick)=> {
@@ -56,7 +56,7 @@ export default function Groups(props) {
                                 <Tag text = "College of L&S" className="tag-g"/>
                             </div>
                         </div>
-                        <MyButton className="small-b">Save</MyButton>
+                        <MyButton className2="small-b">Save</MyButton>
                     </div>
                 </div>
             </MyModal>

@@ -1,0 +1,53 @@
+.modal-g {
+    .form {
+        .desc {
+            .type-buil {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 31px;
+                margin-bottom: 40px;
+                .in-radio {color: $charcoal-grey;}
+                @include not-last-child('.in-radio') {
+                    margin-bottom: 26px;
+                }
+            }
+            .medium-b {
+                width: 220px;
+            }
+        }
+        .buil-dropdown {
+            width: 100%;
+            height: 51px;
+        }
+        .upload-layout {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include not-last-child('.upload') {
+                margin-bottom: 24px;
+            }
+            .upload {
+                display: flex;
+                justify-content: space-between;
+                gap: 51px;
+                label {
+                    min-width: 116px;
+                }
+            }
+            .add-buil {
+                width: 50%;
+                height: 50px;
+                border-radius: 34px;
+                border: solid 2px $charcoal-grey;
+                @include flex(center, center);
+                button {
+                    all: unset;
+                    color: $cool-grey;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+    }
+}

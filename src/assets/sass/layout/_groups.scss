@@ -46,10 +46,15 @@
                 .tag-g{ width: 200px; }
             }
         }
+        .g-container {
+            display: flex;
+            justify-content: center;
+        }
         .small-b {
                 // position: relative;
                 position: absolute;
                 bottom: 33px;
+                width: 133px;
         }   
     }
 }

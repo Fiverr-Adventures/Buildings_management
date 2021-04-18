@@ -41,7 +41,8 @@ export default function People() {
                 <div className="modal-g">
                     <h3 >Add People</h3>  
                     <div className="form">
-                        <DropDown className="c-dropdown" option={selectedOption} handleChange={handleChange}/>
+                        <DropDown className="c-dropdown" label="Add By" option={selectedOption}
+                             handleChange={handleChange} opt1="Single User" opt2="Import CSV"/>
                        { selectedOption === "Single User" ?
                         <div className="desc">
                             <div className="input-details">   
@@ -67,25 +68,21 @@ export default function People() {
                                 </div>
                                 <div className="type-p">
                                     <label className="type">Type</label>
-                                    <InputRadio type="Student" selectedType={selectedType} change={onValueChange} className="in-radio"/>
-                                    <InputRadio type="Faculty" selectedType={selectedType} change={onValueChange} className="in-radio" />
-                                    <InputRadio type="Staff" selectedType={selectedType} change={onValueChange} className="in-radio" />
-                                    <InputRadio type="Building Manager" selectedType={selectedType} change={onValueChange} className="in-radio"/>
-                                    <InputRadio type="Executive Manager" selectedType={selectedType} change={onValueChange} className="in-radio"/>
+                                    <InputRadio type="Student" selectedType={selectedType} 
+                                        change={onValueChange} className="in-radio"/>
+                                    <InputRadio type="Faculty" selectedType={selectedType}
+                                        change={onValueChange} className="in-radio" />
+                                    <InputRadio type="Staff" selectedType={selectedType}
+                                        change={onValueChange} className="in-radio" />
+                                    <InputRadio type="Building Manager" selectedType={selectedType}
+                                        change={onValueChange} className="in-radio"/>
+                                    <InputRadio type="Executive Manager" selectedType={selectedType}
+                                        change={onValueChange} className="in-radio"/>
                                 </div>
                             </div>
                            {typePeople}
-                            {/* <div className="search-door">
-                                <label>Groups</label>
-                                <p className="large">This will dictate what doors they have access to</p>
-                                <SearchBar style={{backgroundColor:"#121212"}}/>
-                            </div>  
-                            <div className="tags">
-                                <Tag text = "Witte Resident" className="tag-g"/>
-                                <Tag text = "College of L&S" className="tag-g"/>
-                            </div> */}
                         </div> : <AddMany />}
-                       { selectedOption === "Single User" ? <MyButton className="small-b">Save</MyButton> : null }
+                       { selectedOption === "Single User" ? <MyButton className1="g-container" className2="small-b">Save</MyButton> : null }
                     </div>
                 </div>
             </MyModal>
