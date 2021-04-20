@@ -4,6 +4,10 @@ import SearchBar from "../searchBar";
 export default function CustomCard(props){
     let index = 0;
 
+    const sendParam = (object)=> {
+        props.getParam(object);
+
+    }
     return (
         <div className="customCard">
             <SearchBar />
@@ -12,7 +16,7 @@ export default function CustomCard(props){
                     return (
                         <ObjectCard  name={object.name} desc={object.desc} type={props.type}
                                     vpnKey={object.vpnKey}  door={object.door} activity={object.activity}
-                                    adminPanel={object.adminPanel} key={index++}
+                                    adminPanel={object.adminPanel} key={index++} onClick={ ()=> sendParam(object) }
                         >
                         </ObjectCard>)
                 })}

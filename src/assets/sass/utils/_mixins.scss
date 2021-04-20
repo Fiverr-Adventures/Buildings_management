@@ -21,6 +21,11 @@
 			@content;
 		}
 	}
+	@else if $size == desktop-upp {
+		@media (max-width: $breakpoint-xxl) {
+			@content;
+		}
+	}
 }
 
 // Ripple effect for buttons

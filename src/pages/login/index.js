@@ -9,6 +9,7 @@ export default function index() {
         <Container style={{maxWidth: "100%", paddingRight: "0",paddingLeft: "0"}}>
             <video 
                 autoPlay
+                // loop
                 style={{
                     position: 'absolute',
                     width: '100%',

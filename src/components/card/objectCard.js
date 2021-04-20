@@ -78,7 +78,7 @@ export default function ObjectCard(props){
         }
     }
     return (
-        <div className="objectCard">
+        <div className="objectCard" onClick={props.onClick}>
             <div className="objectInfo">
                 <p className="label">{props.name}</p>
                 <small>{props.desc}</small>

@@ -42,7 +42,6 @@
                 border: solid 2px $charcoal-grey;
                 @include flex(center, center);
                 button {
-                    all: unset;
                     color: $cool-grey;
                     cursor: pointer;
                 }

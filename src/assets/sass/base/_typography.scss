@@ -27,9 +27,17 @@ a {
     }
     cursor: pointer;
 }
+button, input {
+    all: unset;
+}
 h3 {
     font-family: $font-primary-medium;
     font-size: 48px;
+}
+.title {
+    font-family: $font-primary-medium;
+    font-size: 42px;
+    line-height: 1.33;
 }
 .number {
     font-family: $font-primary-regular;

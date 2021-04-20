@@ -4,15 +4,19 @@ import DoorIcon from '../../assets/icons/svg/doorIcon.svg';
 const managerPermission = () => {
 
     return (
-        <div>
+        <div className="container-perm">
           <div>
-            <img src={BuildIcon} alt="" />
-            <p className="number">214</p>
+            <div className="example">
+              <img src={BuildIcon} alt="" />
+              <p className="number">214</p> 
+            </div>
             <p className="label-3">See full list in the ‘Buildings’ page</p>
           </div>
           <div>
-            <img src={DoorIcon} alt="" />
-            <p className="number">6,472</p>
+            <div className="example">
+              <img src={DoorIcon} alt="" />
+              <p className="number">6,472</p>
+            </div>
             <p className="label-3">See full list in the ‘Doors’ page</p>
           </div>
           

@@ -1,0 +1,13 @@
+.walk-trought{
+    span {
+        margin-right: 30px;
+    }
+    .steps{
+        p {
+            cursor: pointer;
+            &:first-of-type{
+                color: $golden-yellow;
+            }
+        }
+    }
+}

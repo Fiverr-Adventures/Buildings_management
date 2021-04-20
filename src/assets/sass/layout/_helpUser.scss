@@ -1,17 +1,112 @@
 .help-user {
     border: solid 5px $banana-yellow;
+    padding: 21px 56px 35px 44px;
+    // max-width: 900px;
+    // max-height: 900px;
     .permission{
         color:$cool-grey;
     }
-    .dont{
-        width: 250px;
+    h4{
+        border-bottom: solid 1px $charcoal-grey;
+        color: $cool-grey;
+        margin-bottom: 47px;
+        padding-bottom: 5px;
+    }
+    .user-type {
+       margin-left: 15%;
+       margin-bottom: 13px;
+        .exec-manager {
+            color: $golden-yellow;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 41px;
+                left: 50%;
+                border-left: solid 1px $pale-grey;
+                transform: translate(-50%);
+                height: 51px;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                top: 92px;
+                left: 50%;
+                border-bottom: solid 1px $pale-grey;
+                width: 122px;
+            }
+        }
+        .build-manager {
+            display: block;
+            margin-top: 32px;
+            left: 266px;
+            max-width: 233px;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 45px;
+                left: 50%;
+                border-left: solid 1px $pale-grey;
+                transform: translate(-50%);
+                // height: 50px;
+                height: 60px;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                // top: 91px;
+                top: 104px;
+                left: 50%;
+                border-bottom: solid 1px $pale-grey;
+                // width: 132px;
+                width: 143px;
+            }
+        }
+        .stud{
+            // margin-left: 514px;
+            left: 525px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &::before{
+                content: "";
+                position: absolute;
+                border-left: solid 1px $pale-grey;
+                transform: translate(-50%);
+                // height: 100px;
+                height: 100px;
+            }
+            label {
+                display: block;
+                padding-left: 22px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 29px;
+        // bottom: 30px;
+      .dont{
+        padding: 0 14px;
         color: $pale-grey;
         border-color: $pale-grey;
+        }
+        .next{
+            padding: 0 34px;
+            color: $golden-yellow;
+            border-color: $golden-yellow;
+        }   
     }
-    .next{
-        width: 133px;
-        color: $golden-yellow;
-        border-color: $golden-yellow;
-        
+}
+// media query
+@include for-size(desktop-upp){
+    .help-user {
+        .user-type {
+            margin-left: 10%;
+        }
     }
 }

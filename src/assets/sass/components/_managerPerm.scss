@@ -1,0 +1,27 @@
+.container-perm {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &::after{
+        content:"";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        border-left: solid 1px $brownish-grey;
+        transform: translate(-50%);
+    }
+    .example {
+        display: flex;
+        justify-content: center;
+        gap: 22px;
+        margin-bottom: 22px;
+        p{
+            margin-bottom: 0;
+        }
+    }
+    p{
+        margin-bottom: 0;
+        color: $cool-grey;
+    }
+}

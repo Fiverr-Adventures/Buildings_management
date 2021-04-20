@@ -13,6 +13,7 @@ $white: #ffffff;
 $dark-sky-blue: #2491ea;
 $banana-yellow: #feeb4a;
 $golden-yellow: #fec32d;
+$brownish-grey: #707070;
 
 //Shadow
 $shadow-1: 0px 10px 50px 0px rgba(77,86,106, 0.73);
@@ -36,6 +37,7 @@ $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
+$breakpoint-xxl: 1900px;
 
 //Font Path
 $font-primary-medium-path: "../fonts/" + $font-primary + "/" + $font-primary + "-Medium.ttf";
