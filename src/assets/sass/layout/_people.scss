@@ -1,7 +1,6 @@
 .modal-g {
-    .form {
-        height: calc(100% - 65px);
-        .desc {
+    .desc {
+        .form {
             .input-details {
                 margin-bottom: 45px;  
                 .inputs {
@@ -25,11 +24,11 @@
                 p {  color: $cool-grey; }
             }
             .tags {.tag-p { width: 250px;}}
-        }
-        .c-dropdown {
-            width: 185px;
-            height: 42px;
-            margin-bottom: 22px;
+            .c-dropdown {
+                width: 185px;
+                height: 42px;
+                margin-bottom: 22px;
+            }
         }
     }
-}
+} 

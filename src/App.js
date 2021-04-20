@@ -11,6 +11,7 @@ import Groups from "./pages/groups";
 import Doors from "./pages/doors";
 import Home from "./pages/home";
 import Login from "./pages/login";
+import HelpUser from './pages/helpUser';
 
 function App() {
 
@@ -34,6 +35,9 @@ function App() {
                </Route>
                <Route path='/Doors'>
                     <Doors />
+               </Route>
+               <Route path='/HelpUser'>
+                    <HelpUser />
                </Route>
           </Switch>
     </Router>

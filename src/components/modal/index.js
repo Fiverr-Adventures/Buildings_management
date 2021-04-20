@@ -6,13 +6,11 @@ export default function MyModal(props) {
     }
     
     return (
-        <div>
+        <>
             <div onClick={ HandleToggle }  className="backdrop"/>
-            <div  className="content-wrapper_" >
-                <div className="content_"> 
+            <div  className= {` content-wrapper_ ${props.className}`} >
                     {props.children}
-                </div>
             </div>
-        </div>
+        </>
     );
 }

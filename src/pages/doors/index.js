@@ -24,45 +24,45 @@ export default function Doors() {
     const AddDoor= ()=> {
         return (
             <MyModal parentCallback = {handleOpen} >
-                    <div className="modal-g">
-                        <h3 className="h3">Add Door</h3>
+                <div className="modal-g">
+                    <h3 className="h3">Add Door</h3>
+                    <div className="desc">
                         <div className="form">
-                            <div className="desc">
-                                <div className="input-details">   
-                                    <div className="inputs">
-                                        <div className="group-input">
-                                            <label>Name</label>
+                            <div className="input-details">   
+                                <div className="inputs">
+                                    <div className="group-input">
+                                        <label>Name</label>
+                                        <Input className="input-g"/>  
+                                    </div>
+                                    <div className="building-d">
+                                        <div className="group-input build">
+                                            <label>Building</label>
+                                            <Input className="input-g"/>  
+                                        </div>  
+                                        <div className="group-input floor">
+                                            <label>Floor</label>
                                             <Input className="input-g"/>  
                                         </div>
-                                        <div className="building-d">
-                                            <div className="group-input build">
-                                                <label>Building</label>
-                                                <Input className="input-g"/>  
-                                            </div>  
-                                            <div className="group-input floor">
-                                                <label>Floor</label>
-                                                <Input className="input-g"/>  
-                                            </div>
-                                        </div>
                                     </div>
-                                    <div className="type-p">
-                                        <label className="type">Type</label>
-                                        <InputRadio type="Building Entrance" selectedType={selectedType} change={onValueChange} className="in-radio"/>
-                                        <InputRadio type="Interior Public" selectedType={selectedType} change={onValueChange} className="in-radio" />
-                                        <InputRadio type="Interior Private" selectedType={selectedType} change={onValueChange} className="in-radio" />
-                                    </div> 
                                 </div>
-                                <div className="map-it">
-                                    <label>Map It</label>
-                                    <div className="map">
-                                        <img src={WendtFloor} alt="map" /> 
-                                    </div>
-                                 </div>
+                                <div className="type-p">
+                                    <label className="type">Type</label>
+                                    <InputRadio type="Building Entrance" selectedType={selectedType} change={onValueChange} className="in-radio"/>
+                                    <InputRadio type="Interior Public" selectedType={selectedType} change={onValueChange} className="in-radio" />
+                                    <InputRadio type="Interior Private" selectedType={selectedType} change={onValueChange} className="in-radio" />
+                                </div> 
                             </div>
-                            <MyButton className2="small-b">Save</MyButton>
+                            <div className="map-it">
+                                <label>Map It</label>
+                                <div className="map">
+                                    <img src={WendtFloor} alt="map" /> 
+                                </div>
+                            </div>
+                            <MyButton className1="g-container" className2="small-b">Save</MyButton>
                         </div>
                     </div>
-                </MyModal>
+                </div>
+            </MyModal>
         );
     }
 

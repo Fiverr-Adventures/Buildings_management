@@ -31,6 +31,11 @@ h3 {
     font-family: $font-primary-medium;
     font-size: 48px;
 }
+.number {
+    font-family: $font-primary-regular;
+    font-size: 38px;
+    line-height: 1.34;
+  }
 h4 {
     font-family: $font-primary-regular;
     font-size: 32px;
@@ -71,6 +76,11 @@ label {
     font-family: $font-primary-medium;
     font-size: 24px;
     line-height: 1.33;
+}
+.label-3 {
+    font-family: $font-primary-regular;
+    font-size: 24px;
+    line-height:32px;
 }
 .b-text-b {
     font-family: $font-primary-bold;

@@ -39,50 +39,52 @@ export default function People() {
         return (
             <MyModal parentCallback = {handleOpen} >
                 <div className="modal-g">
-                    <h3 >Add People</h3>  
-                    <div className="form">
-                        <DropDown className="c-dropdown" label="Add By" option={selectedOption}
-                             handleChange={handleChange} opt1="Single User" opt2="Import CSV"/>
-                       { selectedOption === "Single User" ?
-                        <div className="desc">
-                            <div className="input-details">   
-                                <div className="inputs">
-                                    <div className="name">
-                                        <div className="group-input">
-                                            <label>First</label>
-                                            <Input className="input-g"/>  
+                    <h3 >Add People</h3> 
+                    <div className="desc">
+                        <div className="form">
+                            <DropDown className="c-dropdown" label="Add By" option={selectedOption}
+                                handleChange={handleChange} opt1="Single User" opt2="Import CSV"/>
+                        { selectedOption === "Single User" ?
+                            <div className="content">
+                                <div className="input-details">   
+                                    <div className="inputs">
+                                        <div className="name">
+                                            <div className="group-input">
+                                                <label>First</label>
+                                                <Input className="input-g"/>  
+                                            </div>
+                                            <div className="group-input">
+                                                <label>Last</label>
+                                                <Input className="input-g"/>  
+                                            </div>
                                         </div>
                                         <div className="group-input">
-                                            <label>Last</label>
+                                            <label>Email</label>
                                             <Input className="input-g"/>  
-                                        </div>
+                                        </div>  
+                                        <div className="group-input">
+                                            <label>Key</label>
+                                            <Input className="input-g"/>  
+                                        </div>  
                                     </div>
-                                    <div className="group-input">
-                                        <label>Email</label>
-                                        <Input className="input-g"/>  
-                                    </div>  
-                                    <div className="group-input">
-                                        <label>Key</label>
-                                        <Input className="input-g"/>  
-                                    </div>  
+                                    <div className="type-p">
+                                        <label className="type">Type</label>
+                                        <InputRadio type="Student" selectedType={selectedType} 
+                                            change={onValueChange} className="in-radio"/>
+                                        <InputRadio type="Faculty" selectedType={selectedType}
+                                            change={onValueChange} className="in-radio" />
+                                        <InputRadio type="Staff" selectedType={selectedType}
+                                            change={onValueChange} className="in-radio" />
+                                        <InputRadio type="Building Manager" selectedType={selectedType}
+                                            change={onValueChange} className="in-radio"/>
+                                        <InputRadio type="Executive Manager" selectedType={selectedType}
+                                            change={onValueChange} className="in-radio"/>
+                                    </div>
                                 </div>
-                                <div className="type-p">
-                                    <label className="type">Type</label>
-                                    <InputRadio type="Student" selectedType={selectedType} 
-                                        change={onValueChange} className="in-radio"/>
-                                    <InputRadio type="Faculty" selectedType={selectedType}
-                                        change={onValueChange} className="in-radio" />
-                                    <InputRadio type="Staff" selectedType={selectedType}
-                                        change={onValueChange} className="in-radio" />
-                                    <InputRadio type="Building Manager" selectedType={selectedType}
-                                        change={onValueChange} className="in-radio"/>
-                                    <InputRadio type="Executive Manager" selectedType={selectedType}
-                                        change={onValueChange} className="in-radio"/>
-                                </div>
-                            </div>
-                           {typePeople}
-                        </div> : <AddMany />}
-                       { selectedOption === "Single User" ? <MyButton className1="g-container" className2="small-b">Save</MyButton> : null }
+                            {typePeople}
+                            </div> : <AddMany />}
+                        { selectedOption === "Single User" ? <MyButton className1="g-container" className2="small-b">Save</MyButton> : null }
+                        </div>
                     </div>
                 </div>
             </MyModal>

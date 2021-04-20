@@ -1,22 +1,14 @@
 .modal-g {
     h3 { text-align: center; }
     height: 100%;
+    .desc {
+        overflow: auto;
+        height: calc(100% - 65px);
+        &::-webkit-scrollbar {
+            display: none;
+        }
     .parag {color: $cool-grey;}
     .form {
-        // height: 100%;
-       .desc {
-            // overflow: auto;
-            // -ms-overflow-style: none;
-            // &::-webkit-scrollbar {
-            //     background-color: transparent;
-            //     width: 12px;
-            // }
-            // &::-webkit-scrollbar-thumb {
-            //     background-color: $charcoal-grey;
-            //     border-radius: 135px;
-            // }
-            // height:65%;
-            padding-right: 4px;
             .input-details {
                 display: flex;
                 margin-bottom: 54px;
@@ -45,16 +37,15 @@
                 }
                 .tag-g{ width: 200px; }
             }
+            .g-container {
+                display: flex;
+                justify-content: center;
+            }
+            .small-b {
+                    position: relative;
+                    // bottom: -75px;
+                    width: 133px;
+            }
         }
-        .g-container {
-            display: flex;
-            justify-content: center;
-        }
-        .small-b {
-                // position: relative;
-                position: absolute;
-                bottom: 33px;
-                width: 133px;
-        }   
     }
 }

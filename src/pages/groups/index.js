@@ -22,14 +22,14 @@ export default function Groups() {
             <MyModal parentCallback = {handleOpen} >
                 <div className="modal-g">
                     <h3 >Add Group</h3>
-                    <p className="large parag">
-                        Create a group of doors to more easily manage permissions. For example,
-                        group all entrance doors of a Residence building and add an end date when
-                        the lease ends. Or group communal rooms across floors to have them
-                        auto-lock after a certain time.
-                    </p>
-                    <div className="form">
-                        <div className="desc">
+                    <div className="desc">
+                        <p className="large parag">
+                            Create a group of doors to more easily manage permissions. For example,
+                            group all entrance doors of a Residence building and add an end date when
+                            the lease ends. Or group communal rooms across floors to have them
+                            auto-lock after a certain time.
+                        </p>
+                        <div className="form">
                             <div className="input-details">
                                 <div className="inputs">
                                     <div className="group-input">
@@ -55,8 +55,8 @@ export default function Groups() {
                                 <Tag text = "Witte Resident" className="tag-g"/>
                                 <Tag text = "College of L&S" className="tag-g"/>
                             </div>
+                            <MyButton  className1="g-container" className2="small-b">Save</MyButton>
                         </div>
-                        <MyButton className2="small-b">Save</MyButton>
                     </div>
                 </div>
             </MyModal>

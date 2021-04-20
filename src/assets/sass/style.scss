@@ -1,16 +1,17 @@
 @import "utils/variables";
 @import "utils/mixins";
-@import "utils/inputs";
-@import "utils/tags";
-@import "utils/buttons";
-@import "utils/dropdown";
-@import "utils/input_radio";
+
 
 // 3 - Base;
 @import "base/reset";
 @import "base/typography";
 
 // 4 - Components;
+@import "components/inputs";
+@import "components/tags";
+@import "components/s_button";
+@import "components/dropdown";
+@import "components/input_radio";
 @import "components/sideBar";
 @import "components/objectCard";
 @import "components/customCard";
@@ -20,7 +21,8 @@
 @import "components/modal";
 @import "components/addMany";
 @import "components/execMan";
-
+@import "components/intro";
+@import "components/b_button";
 // 5 - Layout;
 @import "layout/home";
 @import "layout/login";
@@ -28,3 +30,4 @@
 @import "layout/people";
 @import "layout/door";
 @import "layout/buildings";
+@import "layout/helpUser";

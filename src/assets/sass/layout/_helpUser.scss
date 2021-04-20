@@ -1,0 +1,17 @@
+.help-user {
+    border: solid 5px $banana-yellow;
+    .permission{
+        color:$cool-grey;
+    }
+    .dont{
+        width: 250px;
+        color: $pale-grey;
+        border-color: $pale-grey;
+    }
+    .next{
+        width: 133px;
+        color: $golden-yellow;
+        border-color: $golden-yellow;
+        
+    }
+}

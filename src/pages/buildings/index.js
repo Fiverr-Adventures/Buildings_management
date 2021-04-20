@@ -31,8 +31,8 @@ export default function Buildings() {
             <MyModal parentCallback = {handleOpen} >
                 <div className="modal-g">
                     <h3 >Add Buildings</h3>  
-                    <div className="form">
-                        <div className="desc">
+                    <div className="desc">
+                        <div className="form">
                             <div className="inputs">
                                 <div className="group-input">
                                     <label style={{color: "#b1b3b7"}}>Building Name</label>
@@ -60,7 +60,7 @@ export default function Buildings() {
                                         change={onValueChange} className="in-radio"/>  
                                 </div>
                                 <div>
-                                   <InputRadio type="Gym" selectedType={selectedType} 
+                                    <InputRadio type="Gym" selectedType={selectedType} 
                                         change={onValueChange} className="in-radio"/>
                                     <InputRadio type="Facilities" selectedType={selectedType} 
                                         change={onValueChange} className="in-radio"/>
@@ -81,8 +81,8 @@ export default function Buildings() {
                                     <button className="b-text-s">+</button>
                                 </div>
                             </div>
+                            <MyButton className1="g-container" className2="small-b">Save</MyButton>
                         </div>
-                       <MyButton className1="g-container" className2="small-b">Save</MyButton>
                     </div>
                 </div>
             </MyModal>

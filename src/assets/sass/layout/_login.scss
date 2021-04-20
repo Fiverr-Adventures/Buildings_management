@@ -1,5 +1,4 @@
 .login-container {
-    background-color: rgb(211, 202, 202);
     @include flex(center, center);
     border: 1px solid;
     height: 100vh;
@@ -31,8 +30,7 @@
         top: 50%;
         text-align: center;
        .log-in {
-            width: 300px;
-            height: 60px;
+            padding: 14px 60px;
             border-radius: 50px;
             background-color: $azure-two;
             text-align: center;
