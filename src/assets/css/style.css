@@ -903,6 +903,35 @@ form input {
   border: solid 2px;
   color: #178fed;
   text-align: center;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.b-button::before {
+  content: "";
+  position: absolute;
+  background-color: #1daefc;
+  padding: 50%;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(2);
+          transform: translate(-50%, -50%) scale(2);
+  opacity: 0;
+  -webkit-transition: opacity 700ms, -webkit-transform 700ms;
+  transition: opacity 700ms, -webkit-transform 700ms;
+  transition: transform 700ms, opacity 700ms;
+  transition: transform 700ms, opacity 700ms, -webkit-transform 700ms;
+  pointer-events: none;
+}
+
+.b-button:active::before {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
 }
 
 .container-perm {
@@ -1079,6 +1108,35 @@ form input {
   padding: 0 28px;
   color: #f1524b;
   border-color: #f1524b;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.single-person .delete::before {
+  content: "";
+  position: absolute;
+  background-color: #f1524b;
+  padding: 50%;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(2);
+          transform: translate(-50%, -50%) scale(2);
+  opacity: 0;
+  -webkit-transition: opacity 700ms, -webkit-transform 700ms;
+  transition: opacity 700ms, -webkit-transform 700ms;
+  transition: transform 700ms, opacity 700ms;
+  transition: transform 700ms, opacity 700ms, -webkit-transform 700ms;
+  pointer-events: none;
+}
+
+.single-person .delete:active::before {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
 }
 
 .group-info {
@@ -1168,6 +1226,81 @@ form input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 90%;
+}
+
+.delete-person {
+  background-color: #f1524b;
+}
+
+.delete-person .deletePer {
+  border-color: #e4e6ea;
+  padding: 0 22px;
+  color: #e4e6ea;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.delete-person .deletePer::before {
+  content: "";
+  position: absolute;
+  background-color: #e4e6ea;
+  padding: 50%;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(2);
+          transform: translate(-50%, -50%) scale(2);
+  opacity: 0;
+  -webkit-transition: opacity 700ms, -webkit-transform 700ms;
+  transition: opacity 700ms, -webkit-transform 700ms;
+  transition: transform 700ms, opacity 700ms;
+  transition: transform 700ms, opacity 700ms, -webkit-transform 700ms;
+  pointer-events: none;
+}
+
+.delete-person .deletePer:active::before {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+
+.delete-person .cancel {
+  background-color: #e4e6ea;
+  border-color: #e4e6ea;
+  color: #f1524b;
+  padding: 0 22px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.delete-person .cancel::before {
+  content: "";
+  position: absolute;
+  background-color: #f1524b;
+  padding: 50%;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(2);
+          transform: translate(-50%, -50%) scale(2);
+  opacity: 0;
+  -webkit-transition: opacity 700ms, -webkit-transform 700ms;
+  transition: opacity 700ms, -webkit-transform 700ms;
+  transition: transform 700ms, opacity 700ms;
+  transition: transform 700ms, opacity 700ms, -webkit-transform 700ms;
+  pointer-events: none;
+}
+
+.delete-person .cancel:active::before {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
 }
 
 .home {

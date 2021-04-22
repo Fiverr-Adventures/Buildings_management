@@ -12,3 +12,6 @@ what should I do :
 - handle button save position
 -change data in doorinfo ...
 - show the 3dots in SingleBuilding
+- when start the hme was selected !!
+-align objectInfo name Floor 1 Doors
+- add transition when cancel delete

@@ -1,0 +1,16 @@
+.delete-person{
+    background-color: $coral;
+    .deletePer{
+        border-color: $pale-grey;
+        padding: 0 22px;
+        color: $pale-grey;
+        @include ripple-effect($pale-grey);
+    }
+    .cancel {
+        background-color: $pale-grey;
+        border-color: $pale-grey;
+        color: $coral;
+        padding: 0 22px;
+        @include ripple-effect($coral);
+    }
+}

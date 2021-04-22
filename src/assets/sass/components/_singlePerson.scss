@@ -34,5 +34,6 @@
         padding: 0 28px;
         color: $coral;
         border-color: $coral;
+        @include ripple-effect($coral);
     }
 }

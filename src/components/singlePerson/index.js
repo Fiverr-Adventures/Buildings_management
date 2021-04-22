@@ -3,20 +3,30 @@ import MyModal from "../../components/modal";
 import PeopleInfo from '../../components/peopleInfo';
 import Tag from '../../components/tags'
 import Button2 from '../../components/b_button';
+import DeletePerson from '../../components/deletePerson';
 
 export default function SinglePeople (props) {
     const [add, setAdd] = useState(false);
-    
+    const [add1, setAdd1] = useState(false);
+    const [showComp, setShowComp] = useState(false);
+
     const getAdd = (isClick)=> {
         setAdd(isClick);
     }
-
+    const getAdd1 = (isClick)=> {
+        setAdd1(isClick);
+    }
     const passAdd = ()=> {
         props.getAdd(add);
     }
-    
+    const handleClick=() =>{
+        setShowComp(true);
+        setAdd1(true);
+    }
+
     return (
-        <MyModal sendAdd = {getAdd} onClick={passAdd} className="single-person">
+        showComp && add1 ? <DeletePerson getAdd={getAdd1} name= {props.object.name}/> 
+        : <MyModal sendAdd = {getAdd} onClick={passAdd} className="single-person">
             <h3>People</h3>
             <PeopleInfo object={props.object} />
             <div className="groups-info">
@@ -38,7 +48,7 @@ export default function SinglePeople (props) {
             </div>
             <div className="save-delete">
                 <Button2 className="save">Save</Button2>
-                <Button2  className="delete">Delete</Button2>
+                <Button2  className="delete" onClick={handleClick}>Delete</Button2>
             </div>
         </MyModal>
     )
