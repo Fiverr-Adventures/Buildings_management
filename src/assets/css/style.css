@@ -250,6 +250,7 @@ button, input {
 h3 {
   font-family: "SFPro Medium";
   font-size: 48px;
+  font-weight: normal;
 }
 
 .title {
@@ -268,6 +269,7 @@ h4 {
   font-family: "SFPro Regular";
   font-size: 32px;
   line-height: 1.34;
+  font-weight: normal;
 }
 
 .label {
@@ -954,6 +956,218 @@ form input {
 
 .walk-trought .steps p:first-of-type {
   color: #fec32d;
+}
+
+.info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 26px;
+}
+
+.info-container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.info-container .info p {
+  color: #b1b3b7;
+}
+
+.list-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.list-info .obj:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.list-info .profil-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list-info .profil-img img {
+  border: solid 3px #1daefc;
+  padding: 11px;
+  border-radius: 50%;
+  margin-bottom: 6px;
+}
+
+.single-person {
+  padding: 21px 118px 35px 121px;
+}
+
+.single-person button {
+  color: #178fed;
+}
+
+.single-person h3 {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.single-person .groups-info {
+  margin-bottom: 38px;
+}
+
+.single-person .tag-info {
+  padding: 6px 37px;
+  background-color: transparent;
+  border: solid 2px #e4e6ea;
+}
+
+.single-person .tags-edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.single-person .tags-edit .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.single-person .save-delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 87px;
+}
+
+.single-person .save {
+  padding: 0 39px;
+  color: #178fed;
+  border-color: #178fed;
+}
+
+.single-person .delete {
+  padding: 0 28px;
+  color: #f1524b;
+  border-color: #f1524b;
+}
+
+.group-info {
+  gap: 15px;
+}
+
+.group-info .obj:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.doors-edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+.door-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  gap: 11px;
+}
+
+.door-tags div .tag-info:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.map {
+  border-radius: 42px;
+  background-color: #121212;
+  padding: 18px 0 31px;
+  text-align: center;
+  width: 100%;
+  margin-top: 28px;
+}
+
+.map img {
+  cursor: pointer;
+}
+
+.floors {
+  padding: 7px 19px 30px 51px;
+  border-radius: 42px;
+  background-color: #121212;
+  margin-top: 20px;
+}
+
+.floors p {
+  text-align: center;
+}
+
+.floors .floor-scroll {
+  height: 314px;
+  overflow: auto;
+  -ms-overflow-style: none;
+}
+
+.floors .floor-scroll::-webkit-scrollbar {
+  background-color: transparent;
+  width: 12px;
+}
+
+.floors .floor-scroll::-webkit-scrollbar-thumb {
+  background-color: #b1b3b7;
+  border-radius: 10px;
+}
+
+.floors .floor-scroll .floor-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
 }
 
 .home {

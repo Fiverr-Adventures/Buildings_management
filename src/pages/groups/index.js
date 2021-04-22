@@ -5,73 +5,45 @@ import { groups } from '../../data/groups';
 import Page from '../../components/page';
 import Header from "../../components/header";
 import SideBar from "../../components/sideBar";
-import MyModal from "../../components/modal";
-import SearchBar from "../../components/searchBar";
-import Input from "../../components/input";
-import Tag from '../../components/tags';
-import MyButton from '../../components/s_button';
+import AddGroup from '../../components/addGroup';
+import SingleGroup from '../../components/singleGroup';
+import { groupData } from '../../data/groupInfo';
 
 export default function Groups() {
 
-  const [open, setOpen] = useState(true);
-  const handleOpen = (isClick)=> {
-        setOpen(isClick);
-  }
-    const AddGroup = () => {
-        return (
-            <MyModal parentCallback = {handleOpen} >
-                <div className="modal-g">
-                    <h3 >Add Group</h3>
-                    <div className="desc">
-                        <p className="large parag">
-                            Create a group of doors to more easily manage permissions. For example,
-                            group all entrance doors of a Residence building and add an end date when
-                            the lease ends. Or group communal rooms across floors to have them
-                            auto-lock after a certain time.
-                        </p>
-                        <div className="form">
-                            <div className="input-details">
-                                <div className="inputs">
-                                    <div className="group-input">
-                                        <label>Group Name</label>
-                                        <Input className="input-g"/>  
-                                    </div>
-                                    <div className="group-input">
-                                        <label>Group Manager Email</label>
-                                        <Input className="input-g"/>  
-                                    </div>  
-                                </div>
-                                <div className="date-g">
-                                    <p className="large">Start Date</p>
-                                    <p className="large" style={{color: "#178fed"}}>Add End Date</p>
-                                    <p className="large">Set a Schedule</p>
-                                </div>
-                            </div>
-                            <div className="search-door">
-                                <label>Doors</label>
-                                <SearchBar style={{backgroundColor:"#121212"}}/>
-                            </div>
-                            <div className="tags">
-                                <Tag text = "Witte Resident" className="tag-g"/>
-                                <Tag text = "College of L&S" className="tag-g"/>
-                            </div>
-                            <MyButton  className1="g-container" className2="small-b">Save</MyButton>
-                        </div>
-                    </div>
-                </div>
-            </MyModal>
-        );
-    }
+    const [param, setParam] = useState('');
+    const [add1, setAdd1] = useState(false);
+    const [add2, setAdd2] = useState(false);
 
+    const getAdd1 = (value)=> {
+            setAdd1(value);
+    }
+    const getAdd2 = (value)=> {
+        setAdd2(value);
+    }
+    const getData = (object)=> {
+        var new_object;
+        if (object !== '')
+        {
+            setAdd2(true);
+            var splited = object.name.split(':');   
+            new_object = groupData.filter(obj => {
+                return (splited[1]===obj.name && splited[0]===obj.building)
+              })
+            setParam(new_object[0]);
+        }
+    }
+  
     return (
         
          <Container style={{maxWidth: "100%", paddingRight: "0",paddingLeft: "0" }}>
              <SideBar>
                 <Page>
-                    <Header title="Groups" add="Add Group" addElem = {()=> setOpen(true)}/>
-                    <CustomCard objects={groups} type="groups" />
-                    {open ? <AddGroup /> : null}
-                 </Page> 
+                    <Header title="Groups" add="Add Group"  addElem = {()=> setAdd1(true)}/>
+                    <CustomCard objects={groups} type="groups" getParam = {getData}/>
+                    {add1 ? <AddGroup getAdd={getAdd1} /> : null}
+                    {param && add2 ? <SingleGroup object = {param} getAdd={getAdd2}/> : null}
+                 </Page>
              </SideBar>
         </Container>
     )

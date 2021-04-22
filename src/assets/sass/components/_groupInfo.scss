@@ -1,0 +1,6 @@
+.group-info {
+    gap: 15px;
+    @include not-last-child('.obj') {
+        margin-bottom: 5px;
+    }
+}

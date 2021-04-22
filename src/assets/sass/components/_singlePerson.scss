@@ -1,0 +1,38 @@
+.single-person {
+    padding: 21px 118px 35px 121px;
+    button {color: $azure}
+    h3{ 
+        text-align: center;
+        margin-bottom: 28px;
+    }
+    .groups-info{
+        margin-bottom: 38px;
+    }
+    .tag-info{
+        padding:6px 37px;
+        background-color: transparent;
+        border: solid 2px $pale-grey;
+    }
+    .tags-edit {
+        display: flex;
+        justify-content: space-between;
+       .tags {
+            display: flex;
+            gap: 15px;
+        }  
+    }
+    .save-delete{
+        @include flex(center, center);
+        gap: 87px;
+    }
+    .save{
+        padding: 0 39px;
+        color: $azure;
+        border-color: $azure;
+    }
+    .delete {
+        padding: 0 28px;
+        color: $coral;
+        border-color: $coral;
+    }
+}

@@ -7,6 +7,7 @@ import Header from "../../components/header";
 import SideBar from "../../components/sideBar";
 import AddPeople from '../../components/addPeople';
 import SinglePerson from '../../components/singlePerson';
+import { peopleData } from '../../data/peopleInfo';
 
 export default function People() {
     const [param, setParam] = useState('');
@@ -15,18 +16,19 @@ export default function People() {
 
     const getAdd1 = (value)=> {
             setAdd1(value);
-            console.log(add1);
     }
     const getAdd2 = (value)=> {
         setAdd2(value);
-        console.log(add2);
     }
     const getData = (object)=> {
-        if (object != '')
+        var new_object;
+        if (object !== '')
         {
-            setParam(object);
-            setAdd2(true)
-            console.log(object);
+            setAdd2(true);
+            new_object = peopleData.filter(obj => {
+                return obj.name === object.name
+              })
+            setParam(new_object[0]);
         }
     }
   
@@ -37,7 +39,7 @@ export default function People() {
                     <Header title="People" add="Add People" addElem = {()=> setAdd1(true)}/>
                     <CustomCard objects={people} type="people" getParam = {getData}/>
                     {add1 ? <AddPeople getAdd={getAdd1} /> : null}
-                    {param && add2 ? <SinglePerson param = {param} getAdd={getAdd2}/> : null}
+                    {param && add2 ? <SinglePerson object = {param} getAdd={getAdd2}/> : null}
                 </Page>
             </SideBar>
         </Container>

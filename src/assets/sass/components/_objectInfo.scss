@@ -1,0 +1,13 @@
+.info-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 26px;
+    .info{
+        display: flex;
+        gap: 15px;
+        p {
+            color: $cool-grey;
+        }
+    }
+}

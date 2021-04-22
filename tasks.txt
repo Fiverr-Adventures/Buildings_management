@@ -10,3 +10,5 @@ what should I do :
   https://medium.com/web-dev-survey-from-kyoto/how-to-customize-the-file-upload-button-in-react-b3866a5973d8
 - handle input reset in people when choose option
 - handle button save position
+-change data in doorinfo ...
+- show the 3dots in SingleBuilding

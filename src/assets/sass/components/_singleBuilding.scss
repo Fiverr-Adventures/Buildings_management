@@ -1,0 +1,27 @@
+.floors{
+    padding: 7px 19px 30px 51px;
+    border-radius: 42px;
+    background-color: $black-two;
+    margin-top: 20px;
+    p{
+        text-align: center;
+    }
+    .floor-scroll{
+        height: 314px;
+        overflow: auto;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar {
+            background-color: transparent;
+            width: 12px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $cool-grey;
+            border-radius: 10px;
+        } 
+        .floor-layout {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+        }
+    }
+}

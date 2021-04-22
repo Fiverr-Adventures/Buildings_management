@@ -11,15 +11,12 @@ import ExecutiveManager from '../../components/forPeople/executiveManager';
 
 export default function AddPeople(props) {
     const [add, setAdd] = useState(false);
-    
     const getAdd = (isClick)=> {
         setAdd(isClick);
     }
-
     const passAdd = ()=> {
         props.getAdd(add);
     }
-
     const [selectedType, setSelectedType] = useState("Student");
     const [selectedOption, setSelectedOption] = useState("Single User");
     const onValueChange= (event) => {
