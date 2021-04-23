@@ -1355,7 +1355,7 @@ form input {
   border-radius: 50%;
 }
 
-.steps {
+.req-steps {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1366,15 +1366,15 @@ form input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 31% 81px;
+  padding: 30px 31% 40px;
   margin: auto;
 }
 
-.steps .step:not(:last-child) {
+.req-steps .step:not(:last-child) {
   width: 20%;
 }
 
-.steps .step {
+.req-steps .step {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1387,7 +1387,7 @@ form input {
   position: relative;
 }
 
-.steps .step div {
+.req-steps .step div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1399,7 +1399,7 @@ form input {
           align-items: center;
 }
 
-.steps .step div span {
+.req-steps .step div span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1416,35 +1416,35 @@ form input {
   border: solid 3px #e4e6ea;
 }
 
-.steps .step div p {
+.req-steps .step div p {
   position: absolute;
   top: 42px;
 }
 
-.steps .step div .completed {
+.req-steps .step div .completed {
   white-space: nowrap;
 }
 
-.steps .step .a-after {
+.req-steps .step .a-after {
   width: 100%;
   height: 1px;
   background-color: #e4e6ea;
 }
 
-.steps .completed-step div span {
+.req-steps .completed-step div span {
   background: #36e676;
 }
 
-.steps .completed-step div p {
+.req-steps .completed-step div p {
   color: #e4e6ea;
 }
 
-.steps .active-step div span {
+.req-steps .active-step div span {
   background: #36e676;
   color: #ffffff;
 }
 
-.steps .active-step div p {
+.req-steps .active-step div p {
   color: #25e871;
 }
 
@@ -1505,7 +1505,7 @@ form input {
 
 .req-from .req-title {
   border-bottom: solid 1px #3a3b3c;
-  margin-bottom: 27px;
+  margin-bottom: 19px;
   padding-bottom: 5px;
   color: #b1b3b7;
 }
@@ -1990,7 +1990,7 @@ form input {
 }
 
 .help-user .user-type .exec-manager {
-  color: #fec32d;
+  color: #e4e6ea;
   position: relative;
 }
 

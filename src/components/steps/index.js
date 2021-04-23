@@ -1,29 +1,32 @@
-const Steps = () => {
+const Steps = (props) => {
     return ( 
-        <div className="steps">
-            <div className="step active-step">
+        <div className="req-steps">
+            <div className={`req-step ${ props.nbr >= 1 ? props.className : null}`}>
                 <div>
                     <span></span>
-                    <p className="step active-step"> Submitted </p>
+                    <p className="step"> Submitted </p>
                 </div>
                 <div className="a-after"></div>
             </div>
-            <div className="step">
+            {/* ************************************** */}
+            <div className={`step ${ props.nbr >= 2 ? props.className : null}`}>
                 <div >
                     <span></span>
                     <p className="step"> Department Manager </p>
                 </div>
                 <div className="a-after"></div>
             </div>
-            <div className="step">
-                <div href="#">
+            {/* ************************************** */}
+            <div className={`step ${ props.nbr >= 3 ? props.className : null}`}>
+                <div>
                     <span></span>
                     <p className="step"> Building Managers </p>
                 </div>
                 <div className="a-after"></div>
             </div>
-            <div className="step">
-                <div href="#">
+              {/* ************************************** */}
+            <div className={`step ${ props.nbr >= 4 ? props.className : null}`}>
+                <div>
                     <span></span>
                     <p className="step"> UWPD </p>
                 </div>

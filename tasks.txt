@@ -1,6 +1,3 @@
-what I learn :
-- add class in a parent component
-<div className={`input_ ${props.className}`} >
 what should I do :
 - filter proprty does not work like expected in modal
 - add animation for modal
@@ -16,3 +13,5 @@ what should I do :
 -align objectInfo name Floor 1 Doors
 - add transition when cancel delete
 - align reInfo in permissions request
+- add Draggable Marker(fiha lkhdma) !!!!!!
+- add new LL splach

@@ -1,7 +1,7 @@
-.steps {
+.req-steps {
     position: relative;
     @include flex(center, center);
-    padding: 30px 31% 81px;
+    padding: 30px 31% 40px;
     margin: auto;
     @include not-last-child(".step") {
         width: 20%;

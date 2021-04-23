@@ -39,10 +39,11 @@ export default function Home() {
                                             borderRadius:"0",
                                             bottom: "0"
                                         }}> 
-                        <Lottie 
-                        options={defaultOptions}
-                        height={990}
-                        width={990} /> </Page>   : 
+                                  <Lottie 
+                                    options={defaultOptions}
+                                    height={990}
+                                    width={990} />
+                              </Page>   : 
                 <SideBar>
                     <Page> 
                         <div className="home">

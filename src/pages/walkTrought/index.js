@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import { Link } from 'react-router-dom';
 import Intro from '../../components/helpUserUtils/intro';
 import MyModal from '../../components/modal';
 import Button2 from '../../components/b_button';
@@ -21,7 +22,9 @@ const WalkTrought = () => {
       
             <div className="buttons">
                 <Button2 className="dont">Don’t Show Again</Button2>
-                <Button2 className="next">Next</Button2>
+                <Link to="Home">
+                    <Button2 className="next">Next</Button2>
+                </Link>
             </div>
         </MyModal>
       );
