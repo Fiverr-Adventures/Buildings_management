@@ -13,6 +13,7 @@ import Home from "./pages/home";
 import Login from "./pages/login";
 import HelpUser from './pages/helpUser';
 import WalkTrought from './pages/walkTrought';
+import PermissionsRequest from './pages/permissionRequest';
 function App() {
 
   return (
@@ -41,6 +42,9 @@ function App() {
                </Route>
                <Route path='/WalkTrought'>
                     <WalkTrought />
+               </Route>
+               <Route path='/PermissionsRequest'>
+                    <PermissionsRequest />
                </Route>
           </Switch>
     </Router>

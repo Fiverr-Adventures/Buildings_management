@@ -1,16 +1,30 @@
 .delete-person{
     background-color: $coral;
-    .deletePer{
-        border-color: $pale-grey;
-        padding: 0 22px;
-        color: $pale-grey;
-        @include ripple-effect($pale-grey);
-    }
-    .cancel {
-        background-color: $pale-grey;
-        border-color: $pale-grey;
-        color: $coral;
-        padding: 0 22px;
-        @include ripple-effect($coral);
+    padding: 74px 150px 54px;
+    .quest {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;;
+        h3 {
+            margin: 15% 0;
+        }
+        .buttons {
+            display: flex;
+            gap: 83px;
+        }
+        .deletePer{
+            border-color: $pale-grey;
+            padding: 0 22px;
+            color: $pale-grey;
+            @include ripple-effect($pale-grey);
+        }
+        .cancel {
+            background-color: $pale-grey;
+            border-color: $pale-grey;
+            color: $coral;
+            padding: 0 22px;
+            @include ripple-effect($coral);
+        }
     }
 }

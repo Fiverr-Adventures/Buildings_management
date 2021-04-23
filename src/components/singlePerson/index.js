@@ -25,7 +25,8 @@ export default function SinglePeople (props) {
     }
 
     return (
-        showComp && add1 ? <DeletePerson getAdd={getAdd1} name= {props.object.name}/> 
+        showComp && add1 ? <DeletePerson getAdd={getAdd1} 
+                            object= {props.object} name={props.object.name} /> 
         : <MyModal sendAdd = {getAdd} onClick={passAdd} className="single-person">
             <h3>People</h3>
             <PeopleInfo object={props.object} />

@@ -1,4 +1,6 @@
 .person-info{
+    @include flex(center, center);
+    gap: 21px;
     img {
         border: solid 3px $pale-grey;
         padding: 11px;

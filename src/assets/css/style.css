@@ -375,6 +375,13 @@ label {
   line-height: 1.33;
 }
 
+.step {
+  font-family: "SFPro Regular";
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+}
+
 .input_ {
   height: 51px;
   border-radius: 64px;
@@ -1230,9 +1237,35 @@ form input {
 
 .delete-person {
   background-color: #f1524b;
+  padding: 74px 150px 54px;
 }
 
-.delete-person .deletePer {
+.delete-person .quest {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.delete-person .quest h3 {
+  margin: 15% 0;
+}
+
+.delete-person .quest .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 83px;
+}
+
+.delete-person .quest .deletePer {
   border-color: #e4e6ea;
   padding: 0 22px;
   color: #e4e6ea;
@@ -1241,7 +1274,7 @@ form input {
   overflow: hidden;
 }
 
-.delete-person .deletePer::before {
+.delete-person .quest .deletePer::before {
   content: "";
   position: absolute;
   background-color: #e4e6ea;
@@ -1259,7 +1292,7 @@ form input {
   pointer-events: none;
 }
 
-.delete-person .deletePer:active::before {
+.delete-person .quest .deletePer:active::before {
   -webkit-transition: 0s;
   transition: 0s;
   opacity: 1;
@@ -1267,7 +1300,7 @@ form input {
           transform: translate(-50%, -50%) scale(0);
 }
 
-.delete-person .cancel {
+.delete-person .quest .cancel {
   background-color: #e4e6ea;
   border-color: #e4e6ea;
   color: #f1524b;
@@ -1277,7 +1310,7 @@ form input {
   overflow: hidden;
 }
 
-.delete-person .cancel::before {
+.delete-person .quest .cancel::before {
   content: "";
   position: absolute;
   background-color: #f1524b;
@@ -1295,12 +1328,158 @@ form input {
   pointer-events: none;
 }
 
-.delete-person .cancel:active::before {
+.delete-person .quest .cancel:active::before {
   -webkit-transition: 0s;
   transition: 0s;
   opacity: 1;
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
+}
+
+.person-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 21px;
+}
+
+.person-info img {
+  border: solid 3px #e4e6ea;
+  padding: 11px;
+  border-radius: 50%;
+}
+
+.steps {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 31% 81px;
+  margin: auto;
+}
+
+.steps .step:not(:last-child) {
+  width: 20%;
+}
+
+.steps .step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.steps .step div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.steps .step div span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: transparent;
+  border: solid 3px #e4e6ea;
+}
+
+.steps .step div p {
+  position: absolute;
+  top: 42px;
+}
+
+.steps .step div .completed {
+  white-space: nowrap;
+}
+
+.steps .step .a-after {
+  width: 100%;
+  height: 1px;
+  background-color: #e4e6ea;
+}
+
+.steps .completed-step div span {
+  background: #36e676;
+}
+
+.steps .completed-step div p {
+  color: #e4e6ea;
+}
+
+.steps .active-step div span {
+  background: #36e676;
+  color: #ffffff;
+}
+
+.steps .active-step div p {
+  color: #25e871;
+}
+
+.req-profil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.req-profil h4, .req-profil p {
+  margin-bottom: 0;
+}
+
+.req-profil p {
+  font-weight: normal;
+}
+
+.req-profil img {
+  margin-right: 15px;
+  border: solid 3px #e4e6ea;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.req-desc {
+  width: 100%;
+  padding: 11px 26px;
+  border-radius: 25px;
+  background-color: #121212;
+  margin-top: 84px;
+  height: 240px;
+}
+
+.req-desc p {
+  color: #48c2f9;
 }
 
 .home {
@@ -1777,5 +1956,93 @@ form input {
   .help-user .user-type {
     margin-left: 10%;
   }
+}
+
+.perm-request {
+  padding: 21px 49px 35px 42px;
+}
+
+.perm-request h3 {
+  text-align: center;
+}
+
+.perm-request .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 83px;
+}
+
+.perm-request .buttons .submit {
+  border-color: #25e871;
+  padding: 0 23px;
+  color: #25e871;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.perm-request .buttons .submit::before {
+  content: "";
+  position: absolute;
+  background-color: #25e871;
+  padding: 50%;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(2);
+          transform: translate(-50%, -50%) scale(2);
+  opacity: 0;
+  -webkit-transition: opacity 700ms, -webkit-transform 700ms;
+  transition: opacity 700ms, -webkit-transform 700ms;
+  transition: transform 700ms, opacity 700ms;
+  transition: transform 700ms, opacity 700ms, -webkit-transform 700ms;
+  pointer-events: none;
+}
+
+.perm-request .buttons .submit:active::before {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+
+.perm-request .buttons .cancel {
+  border-color: #f1524b;
+  padding: 0 23px;
+  color: #f1524b;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.perm-request .buttons .cancel::before {
+  content: "";
+  position: absolute;
+  background-color: #f1524b;
+  padding: 50%;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(2);
+          transform: translate(-50%, -50%) scale(2);
+  opacity: 0;
+  -webkit-transition: opacity 700ms, -webkit-transform 700ms;
+  transition: opacity 700ms, -webkit-transform 700ms;
+  transition: transform 700ms, opacity 700ms;
+  transition: transform 700ms, opacity 700ms, -webkit-transform 700ms;
+  pointer-events: none;
+}
+
+.perm-request .buttons .cancel:active::before {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
 }
 /*# sourceMappingURL=style.css.map */

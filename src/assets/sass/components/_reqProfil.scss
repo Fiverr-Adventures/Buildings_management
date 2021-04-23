@@ -1,0 +1,11 @@
+.req-profil {
+    display: flex;
+    h4, p{ margin-bottom: 0;}
+    p{font-weight: normal;}
+    img{
+        margin-right: 15px;
+        border: solid 3px $pale-grey;
+        padding: 8px;
+        border-radius: 50%
+    }
+}

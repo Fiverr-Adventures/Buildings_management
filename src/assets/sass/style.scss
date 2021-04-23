@@ -33,7 +33,11 @@
 @import "components/singleDoor";
 @import "components/singleBuilding";
 @import "components/deletePerson";
-
+@import "components/personInfo";
+@import "components/steps";
+@import "components/reqProfil";
+@import "components/reqDesc";
+@import "components/reqInfo";
 // 5 - Layout;
 @import "layout/home";
 @import "layout/login";
@@ -42,3 +46,4 @@
 @import "layout/door";
 @import "layout/buildings";
 @import "layout/helpUser";
+@import "layout/permRequest";
