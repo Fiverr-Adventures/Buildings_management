@@ -1482,6 +1482,148 @@ form input {
   color: #48c2f9;
 }
 
+.req-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.req-info div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.req-info div p {
+  color: #b1b3b7;
+}
+
+.req-from .req-title {
+  border-bottom: solid 1px #3a3b3c;
+  margin-bottom: 27px;
+  padding-bottom: 5px;
+  color: #b1b3b7;
+}
+
+.req-from .req-infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 100px;
+  width: 90%;
+}
+
+.req-from .req-desc-note .note {
+  margin-bottom: 4px;
+  margin-top: 7px;
+  color: #b1b3b7;
+}
+
+.req-from .req-desc-note .req-descr {
+  max-height: 95px;
+  margin-top: 0;
+  margin-bottom: 29px;
+}
+
+.req-infos-for {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 100px;
+}
+
+.req-infos-for .floor-layout {
+  position: relative;
+  cursor: pointer;
+}
+
+.req-infos-for .floor-layout p {
+  font-family: "SFPro Regular";
+  font-weight: normal;
+  color: #b1b3b7;
+  position: absolute;
+  left: 13%;
+  right: 0;
+  top: 35%;
+}
+
+.approved-title {
+  color: #25e871;
+  border-bottom: solid 1px #3a3b3c;
+  margin-bottom: 39px;
+  padding-bottom: 5px;
+}
+
+.req-approved {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.req-approved .req-infos-app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 48px;
+  margin-top: 37px;
+}
+
+.req-approved .done {
+  border-color: #e4e6ea;
+  padding: 0 35px;
+  color: #e4e6ea;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.req-approved .done::before {
+  content: "";
+  position: absolute;
+  background-color: #e4e6ea;
+  padding: 50%;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(2);
+          transform: translate(-50%, -50%) scale(2);
+  opacity: 0;
+  -webkit-transition: opacity 700ms, -webkit-transform 700ms;
+  transition: opacity 700ms, -webkit-transform 700ms;
+  transition: transform 700ms, opacity 700ms;
+  transition: transform 700ms, opacity 700ms, -webkit-transform 700ms;
+  pointer-events: none;
+}
+
+.req-approved .done:active::before {
+  -webkit-transition: 0s;
+  transition: 0s;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+
 .home {
   max-width: 1700px;
   width: 90%;

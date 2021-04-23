@@ -1,0 +1,18 @@
+.req-infos-for{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    .floor-layout {
+        position: relative;
+        cursor: pointer;
+        p {
+            font-family: $font-primary-regular;
+            font-weight: normal;
+            color: $cool-grey;
+            position: absolute;
+            left: 13%;
+            right: 0;
+            top: 35%;
+        }
+    }
+}

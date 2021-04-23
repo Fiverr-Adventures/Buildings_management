@@ -15,3 +15,4 @@ what should I do :
 - when start the hme was selected !!
 -align objectInfo name Floor 1 Doors
 - add transition when cancel delete
+- align reInfo in permissions request

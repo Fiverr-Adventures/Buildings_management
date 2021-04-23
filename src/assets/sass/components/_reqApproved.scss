@@ -1,0 +1,23 @@
+.approved-title{
+    color: $weird-green-two;
+    border-bottom: solid 1px $charcoal-grey;
+    margin-bottom: 39px;
+    padding-bottom: 5px;
+}
+.req-approved {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .req-infos-app{
+        display: flex;
+        justify-content: space-between;
+        gap: 48px;
+        margin-top: 37px;
+    }
+    .done{
+        border-color: $pale-grey;
+        padding: 0 35px;
+        color: $pale-grey;
+        @include ripple-effect($pale-grey);
+    }
+}

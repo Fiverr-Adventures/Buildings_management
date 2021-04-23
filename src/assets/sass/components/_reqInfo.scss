@@ -1,3 +1,14 @@
 .req-info {
-    
+    display: flex;
+    flex-direction: column;
+    div{
+        display: flex;
+        gap: 15px;
+        // border: 1px solid;
+        p{
+            color: $cool-grey;
+            // border: 1px solid;
+            // align-self: flex-end;
+        }
+    }
 }

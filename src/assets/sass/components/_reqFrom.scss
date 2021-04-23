@@ -1,0 +1,26 @@
+.req-from {
+    .req-title{
+        border-bottom: solid 1px $charcoal-grey;
+        margin-bottom: 27px;
+        padding-bottom: 5px;
+        color: $cool-grey;
+    }
+    .req-infos {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        width: 90%;
+    }
+    .req-desc-note{
+        .note{
+            margin-bottom: 4px;
+            margin-top: 7px;
+            color: $cool-grey;
+        }
+        .req-descr{
+            max-height: 95px;
+            margin-top: 0;
+            margin-bottom: 29px;
+        }
+    }
+}
