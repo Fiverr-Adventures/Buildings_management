@@ -2,7 +2,7 @@
     position: relative;
     @include flex(center, center);
     padding: 30px 31% 40px;
-    margin: auto;
+    // margin: auto;
     @include not-last-child(".step") {
         width: 20%;
     }

@@ -61,7 +61,9 @@ const HelpUser = () => {
             </p> :
             <ManagerPermission />}
             <div className="buttons">
-                <Button2 className="dont">Don’t Show Again</Button2>
+                <Link to="home">
+                    <Button2 className="dont">Don’t Show Again</Button2>
+                </Link>
                 <Link to="WalkTrought">
                     <Button2 className="next" >Next</Button2>
                 </Link>

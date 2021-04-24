@@ -24,6 +24,7 @@
     .save-delete{
         @include flex(center, center);
         gap: 87px;
+        margin-top: auto;
     }
     .save{
         padding: 0 39px;

@@ -10,6 +10,8 @@
     top: 0;
 }
 .content-wrapper_ {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     z-index: 500;
     width: 55%;

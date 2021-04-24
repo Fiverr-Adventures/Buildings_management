@@ -1,7 +1,7 @@
 const Steps = (props) => {
     return ( 
         <div className="req-steps">
-            <div className={`req-step ${ props.nbr >= 1 ? props.className : null}`}>
+            <div className={`step ${ props.nbr >= 1 ? props.className : null}`}>
                 <div>
                     <span></span>
                     <p className="step"> Submitted </p>

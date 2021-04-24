@@ -821,6 +821,13 @@ form input {
 }
 
 .content-wrapper_ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: fixed;
   z-index: 500;
   width: 55%;
@@ -982,6 +989,10 @@ form input {
   color: #b1b3b7;
 }
 
+.walk-trought .buttons {
+  margin-top: auto;
+}
+
 .walk-trought span {
   margin-right: 30px;
 }
@@ -1103,6 +1114,7 @@ form input {
       -ms-flex-align: center;
           align-items: center;
   gap: 87px;
+  margin-top: auto;
 }
 
 .single-person .save {
@@ -1367,7 +1379,6 @@ form input {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px 31% 40px;
-  margin: auto;
 }
 
 .req-steps .step:not(:last-child) {
@@ -1624,6 +1635,51 @@ form input {
           transform: translate(-50%, -50%) scale(0);
 }
 
+#map {
+  background: url("../icons/svg/Wendt-Floor.svg");
+  background-size: cover;
+  width: 249px;
+  height: 363px;
+  margin: auto;
+}
+
+#test {
+  display: block;
+  height: 321px;
+  width: 466px;
+}
+
+#test img {
+  shape-outside: url("../icons/svg/Wendt-Floor.svg");
+  shape-margin: 2%;
+}
+
+.coordinates {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute;
+  top: 440px;
+  left: 10px;
+  padding: 5px 10px;
+  margin: 0;
+  font-size: 11px;
+  line-height: 18px;
+  border-radius: 3px;
+  display: none;
+}
+
+.mapboxgl-ctrl-bottom-right {
+  display: none;
+}
+
+.mapboxgl-ctrl-bottom-left .mapboxgl-ctrl {
+  display: none !important;
+}
+
+canvas {
+  opacity: 0;
+}
+
 .home {
   max-width: 1700px;
   width: 90%;
@@ -1728,6 +1784,13 @@ form input {
 
 .modal-g {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .modal-g h3 {
@@ -1736,7 +1799,16 @@ form input {
 
 .modal-g .desc {
   overflow: auto;
-  height: calc(100% - 65px);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .modal-g .desc::-webkit-scrollbar {
@@ -1745,6 +1817,19 @@ form input {
 
 .modal-g .desc .parag {
   color: #b1b3b7;
+}
+
+.modal-g .desc .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .modal-g .desc .form .input-details {
@@ -1790,12 +1875,7 @@ form input {
 }
 
 .modal-g .desc .form .g-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: auto auto 0 auto;
 }
 
 .modal-g .desc .form .small-b {
@@ -2080,6 +2160,7 @@ form input {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 29px;
+  margin-top: auto;
 }
 
 .help-user .buttons .dont {
@@ -2109,6 +2190,7 @@ form input {
 }
 
 .perm-request .buttons {
+  margin-top: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

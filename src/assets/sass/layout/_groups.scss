@@ -1,14 +1,22 @@
 .modal-g {
     h3 { text-align: center; }
     height: 100%;
+    display: flex;
+    flex-direction: column;
     .desc {
         overflow: auto;
-        height: calc(100% - 65px);
+        // height: calc(100% - 65px);
+        flex: 1;
+        display: flex;
+        flex-direction: column;
         &::-webkit-scrollbar {
             display: none;
         }
     .parag {color: $cool-grey;}
     .form {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
             .input-details {
                 display: flex;
                 margin-bottom: 54px;
@@ -38,12 +46,10 @@
                 .tag-g{ width: 200px; }
             }
             .g-container {
-                display: flex;
-                justify-content: center;
+                margin: auto auto 0 auto;
             }
             .small-b {
                     position: relative;
-                    // bottom: -75px;
                     width: 133px;
             }
         }

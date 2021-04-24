@@ -4,6 +4,7 @@ import Input from "../../components/input";
 import MyButton from '../../components/s_button';
 import InputRadio from '../../components/input_radio';
 import WendtFloor from '../../assets/icons/svg/Wendt-Floor.svg';
+import DraggableMarker from '../../components/draggableMarker'
 
 export default function AddDoor (props) {
 
@@ -53,7 +54,7 @@ export default function AddDoor (props) {
                         <div className="map-it">
                             <label>Map It</label>
                             <div className="map">
-                                <img src={WendtFloor} alt="map" /> 
+                                <DraggableMarker />
                             </div>
                         </div>
                         <MyButton className1="g-container" className2="small-b">Save</MyButton>

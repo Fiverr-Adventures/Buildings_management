@@ -21,7 +21,9 @@ const WalkTrought = () => {
             </div>
       
             <div className="buttons">
-                <Button2 className="dont">Don’t Show Again</Button2>
+                <Link to="Home">
+                    <Button2 className="dont">Don’t Show Again</Button2>
+                </Link>
                 <Link to="Home">
                     <Button2 className="next">Next</Button2>
                 </Link>
