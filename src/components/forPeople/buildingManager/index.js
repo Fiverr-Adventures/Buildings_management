@@ -8,7 +8,7 @@ const BuildingManager = () => {
                 <label>Groups</label>
                 <p className="large">This will dictate what buildings they have
                 <span style={{color: "#178fed"}}> Read/Write-Approve </span>access to</p>
-                <SearchBar style={{backgroundColor:"#121212"}}/>
+                <SearchBar />
             </div>  
             <div className="tags">
                 <Tag text = "Witte Residence Hall" className="tag-p"/>

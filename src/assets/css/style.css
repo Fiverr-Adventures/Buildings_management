@@ -581,7 +581,7 @@ label {
   opacity: 0;
   -webkit-transition: opacity .2s, visibility .2s;
   transition: opacity .2s, visibility .2s;
-  z-index: 10;
+  z-index: 3;
 }
 
 .objectCard {
@@ -773,7 +773,7 @@ form input {
 
 .pageHeader button {
   height: 42px;
-  padding: 6px 12px 9px 13px;
+  padding: 0 13px;
   border-radius: 34px;
   border: solid 2px #2491ea;
   background-color: #191919;
@@ -811,13 +811,15 @@ form input {
 
 .backdrop {
   position: fixed;
-  z-index: 100;
+  z-index: 1;
   -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
+  -webkit-filter: brightness(2);
+          filter: brightness(2);
 }
 
 .content-wrapper_ {
@@ -829,25 +831,24 @@ form input {
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
-  z-index: 500;
+  z-index: 4;
   width: 55%;
   height: 85%;
   border-radius: 135px;
   background-color: #191919;
-  border: 1px solid;
   margin: auto;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 30px 75px 33px 75px;
+  -webkit-animation: opacity  5s;
+          animation: opacity  5s;
 }
 
 .add-many {
   width: 100%;
   height: calc(100% - 113px);
-  border-radius: 98px;
-  border: solid 4px #1daefc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -861,6 +862,8 @@ form input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: url("../icons//svg/addMany.svg") no-repeat;
+  background-size: 100% 100%;
 }
 
 .add-many label {
@@ -871,6 +874,11 @@ form input {
 .add-many .or {
   color: #3a3b3c;
   margin-bottom: 33px;
+}
+
+.add-many .upload {
+  height: 42px;
+  padding: 0 30px;
 }
 
 .exec-man {

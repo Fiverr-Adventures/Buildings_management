@@ -7,7 +7,7 @@ const Student = () => {
             <div className="search-door">
                 <label>Groups</label>
                 <p className="large">This will dictate what doors they have access to</p>
-                <SearchBar style={{backgroundColor:"#121212"}}/>
+                <SearchBar />
             </div>  
             <div className="tags">
                 <Tag text = "Witte Resident" className="tag-g"/>

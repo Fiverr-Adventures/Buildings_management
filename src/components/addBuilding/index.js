@@ -1,4 +1,4 @@
-import  {useState } from "react";
+import  React, {useState } from "react";
 import MyModal from "../../components/modal";
 import Input from "../../components/input";
 import MyButton from '../../components/s_button';
@@ -24,6 +24,23 @@ export default function AddBuilding (props) {
     }
     const handleChange= (event) => {
         setSelectedOption(event.target.value);
+    }
+    
+    const [fileUpload1, setfileUpload1] = useState("")
+    var inputReference1 = React.createRef();
+    const fileUploadAction1 = () => {
+        inputReference1.current.click();
+    }
+    const fileUploadInputChange1 = (e) => {
+        setfileUpload1(e.target.value);
+    }
+    const [fileUpload2, setfileUpload2] = useState("")
+    var inputReference2 = React.createRef();
+    const fileUploadAction2 = () => {
+        inputReference2.current.click();
+    }
+    const fileUploadInputChange2 = (e) => {
+        setfileUpload2(e.target.value);
     }
     return (
         <MyModal sendAdd = {getAdd} onClick={passAdd} >
@@ -69,11 +86,26 @@ export default function AddBuilding (props) {
                         <div className="upload-layout">
                             <div className="upload">
                                 <label>Baselayer</label>
-                                <MyButton className1= "b-container" className2="medium-b">Upload Layout</MyButton>
+                                {/* <MyButton className1= "b-container" className2="medium-b">Upload Layout</MyButton> */}
+                                <input type="file" hidden ref={inputReference1} onChange={fileUploadInputChange1} />
+                                <div>
+                                    <MyButton className1= "b-container" className2="medium-b"
+                                            onClick={fileUploadAction1}>
+                                        Upload Layout
+                                    </MyButton>
+                                    {fileUpload1}
+                                </div>
                             </div>
                             <div className="upload">
                                 <label>Floor 1</label>
-                                <MyButton className1= "b-container" className2="medium-b">Upload Layout</MyButton>
+                                <input type="file" hidden ref={inputReference2} onChange={fileUploadInputChange2} />
+                                <div>
+                                    <MyButton className1= "b-container" className2="medium-b"
+                                            onClick={fileUploadAction2}>
+                                        Upload Layout
+                                    </MyButton>
+                                    {fileUpload2}
+                                </div>
                             </div> 
                             <div className="add-buil">
                                 <button className="b-text-s">+</button>

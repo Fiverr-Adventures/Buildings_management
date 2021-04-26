@@ -47,7 +47,7 @@ export default function AddGroup(props) {
                         </div>
                         <div className="search-door">
                             <label>Doors</label>
-                            <SearchBar style={{backgroundColor:"#121212"}}/>
+                            <SearchBar />
                         </div>
                         <div className="tags">
                             <Tag text = "Witte Resident" className="tag-g"/>
