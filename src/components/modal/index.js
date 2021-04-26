@@ -14,7 +14,7 @@ export default function MyModal(props) {
                 }
             }
                 className="backdrop" />
-            <div className={` content-wrapper_ ${props.className}`} >
+            <div className={` content-wrapper_ ${props.className} ${props.className2}`} >
                 {props.children}
             </div>
         </>

@@ -2,11 +2,11 @@ import Search from "../../assets/icons/svg/search.svg";
 
 export default function SearchBar(props) {
     return (
-        <form style={{...props.style}} className="search-form">
-            <button type="submit">
+        <div style={{...props.style}} className="search-form">
+            <button type="button">
                 <img src={Search} alt="search"/>
             </button>
             <input type="text"  placeholder="Search" />
-        </form>
+        </div>
     )
 }

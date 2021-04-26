@@ -7,16 +7,17 @@ import Button2 from '../../components/b_button';
 export default function SingleGroup (props) {
     const [add, setAdd] = useState(false);
     
+
     const getAdd = (isClick)=> {
         setAdd(isClick);
     }
-
     const passAdd = ()=> {
         props.getAdd(add);
     }
-    
+
     return (
-        <MyModal sendAdd = {getAdd} onClick={passAdd} className="single-person">
+        <MyModal sendAdd = {getAdd} onClick={passAdd}
+            className="single-person" className2={props.show}>
             <div className="modal-g">
                 <h3>Group</h3>
                 <div className="desc">

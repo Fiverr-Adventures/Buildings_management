@@ -961,6 +961,7 @@ label {
 }
 
 .content-wrapper_ {
+  padding: 30px 75px 33px 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -969,19 +970,16 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
-  z-index: 4;
   width: 55%;
   height: 85%;
   border-radius: 135px;
   background-color: #191919;
   margin: auto;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
-  padding: 30px 75px 33px 75px;
-  -webkit-animation: opacity  5s;
-          animation: opacity  5s;
+  bottom: 0;
+  z-index: 4;
 }
 
 .add-many {

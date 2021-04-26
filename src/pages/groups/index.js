@@ -42,7 +42,7 @@ export default function Groups() {
                     <Header title="Groups" add="Add Group"  addElem = {()=> setAdd1(true)}/>
                     <CustomCard objects={groups} type="groups" getParam = {getData}/>
                     {add1 ? <AddGroup getAdd={getAdd1} /> : null}
-                    {param && add2 ? <SingleGroup object = {param} getAdd={getAdd2}/> : null}
+                    {param && add2 ? <SingleGroup object = {param} getAdd={getAdd2} /> : null}
                  </Page>
              </SideBar>
         </Container>
