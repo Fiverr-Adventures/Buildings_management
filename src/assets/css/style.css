@@ -382,6 +382,141 @@ label {
   text-align: center;
 }
 
+@media (max-width: 1700px) {
+  h3 {
+    font-size: 44px;
+  }
+  .title {
+    font-size: 38px;
+  }
+  .number {
+    font-size: 34px;
+  }
+  h4 {
+    font-size: 28px;
+  }
+  .label {
+    font-size: 20px;
+  }
+  .buttonText {
+    font-size: 18px;
+  }
+  .medium {
+    font-size: 18px;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  :-ms-input-placeholder {
+    font-size: 18px;
+  }
+  ::-ms-input-placeholder {
+    font-size: 18px;
+  }
+  ::placeholder {
+    font-size: 18px;
+  }
+  small {
+    font-size: 14px;
+  }
+  .big {
+    font-size: 28px;
+  }
+  label {
+    font-size: 24px;
+  }
+  .label-2 {
+    font-size: 20px;
+  }
+  .label-3 {
+    font-size: 20px;
+  }
+  .b-text-b {
+    font-size: 22px;
+  }
+  .b-text-m {
+    font-size: 20px;
+  }
+  .large {
+    font-size: 18px;
+  }
+  .b-text-s {
+    font-size: 16px;
+  }
+  .b-text-r {
+    font-size: 16px;
+  }
+  .x-small {
+    font-size: 14px;
+  }
+  .step {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  h3 {
+    font-size: 40px;
+  }
+  .title {
+    font-size: 34px;
+  }
+  .number {
+    font-size: 30px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  .label {
+    font-size: 16px;
+  }
+  .buttonText {
+    font-size: 14px;
+  }
+  .medium {
+    font-size: 14px;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  :-ms-input-placeholder {
+    font-size: 14px;
+  }
+  ::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  ::placeholder {
+    font-size: 14px;
+  }
+  small {
+    font-size: 12px;
+  }
+  .big {
+    font-size: 24px;
+  }
+  label {
+    font-size: 20px;
+  }
+  .label-2 {
+    font-size: 16px;
+  }
+  .label-3 {
+    font-size: 16px;
+  }
+  .b-text-b {
+    font-size: 18px;
+  }
+  .b-text-m {
+    font-size: 16px;
+  }
+  .large {
+    font-size: 14px;
+  }
+  .b-text-r {
+    font-size: 12px;
+  }
+}
+
 .input_ {
   height: 51px;
   border-radius: 64px;
@@ -395,13 +530,16 @@ label {
 }
 
 .tag {
-  height: 42px;
   padding: 6px 0;
   background-color: #178fed;
   text-align: center;
   color: #ffffff;
   cursor: pointer;
   border-radius: 34px;
+}
+
+.tag p {
+  margin-bottom: 0;
 }
 
 .s-button {
@@ -735,7 +873,7 @@ label {
   bottom: 0;
 }
 
-form {
+.search-form {
   width: 100%;
   height: 51px;
   margin: 0 0 24px;
@@ -748,11 +886,11 @@ form {
   display: flex;
 }
 
-form button {
+.search-form button {
   margin-right: 23px;
 }
 
-form input {
+.search-form input {
   width: 90%;
   font-size: 20px;
 }
@@ -895,6 +1033,8 @@ form input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 10px;
+  margin-top: 45px;
 }
 
 .exec-man span {
@@ -920,7 +1060,6 @@ form input {
 }
 
 .b-button {
-  height: 56px;
   border-radius: 34px;
   border: solid 2px;
   color: #178fed;
@@ -964,6 +1103,8 @@ form input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  gap: 24px;
+  margin-bottom: 17px;
 }
 
 .container-perm::after {
@@ -971,7 +1112,7 @@ form input {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 50%;
+  left: 52%;
   border-left: solid 1px #707070;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -1033,6 +1174,13 @@ form input {
 
 .info-container .info p {
   color: #b1b3b7;
+  width: 100px;
+}
+
+@media (max-width: 1700px) {
+  .info-container .info p {
+    width: 70px;
+  }
 }
 
 .list-info {
@@ -1050,6 +1198,10 @@ form input {
 
 .list-info .obj:not(:last-child) {
   margin-bottom: 13px;
+}
+
+.list-info .p {
+  width: 60px !important;
 }
 
 .list-info .profil-img {
@@ -1074,6 +1226,12 @@ form input {
 
 .single-person {
   padding: 21px 118px 35px 121px;
+}
+
+@media (max-width: 1700px) {
+  .single-person {
+    padding: 21px 87px 35px 87px;
+  }
 }
 
 .single-person button {
@@ -1126,13 +1284,13 @@ form input {
 }
 
 .single-person .save {
-  padding: 0 39px;
+  padding: 11px 39px;
   color: #178fed;
   border-color: #178fed;
 }
 
 .single-person .delete {
-  padding: 0 28px;
+  padding: 11px 28px;
   color: #f1524b;
   border-color: #f1524b;
   display: inline-block;
@@ -1201,7 +1359,7 @@ form input {
   gap: 11px;
 }
 
-.door-tags div .tag-info:not(:last-child) {
+.door-tags div .tag-info {
   margin-bottom: 13px;
 }
 
@@ -1212,16 +1370,26 @@ form input {
   text-align: center;
   width: 100%;
   margin-top: 28px;
+  margin-bottom: 10px;
 }
 
 .map img {
   cursor: pointer;
 }
 
+.map svg g {
+  fill: rgba(255, 237, 52, 0.31);
+}
+
+.map svg g circle {
+  fill: transparent;
+}
+
 .floors {
   padding: 7px 19px 30px 51px;
   border-radius: 42px;
   background-color: #121212;
+  margin-bottom: 10px;
   margin-top: 20px;
 }
 
@@ -1260,6 +1428,12 @@ form input {
   padding: 74px 150px 54px;
 }
 
+@media (max-width: 1700px) {
+  .delete-person {
+    padding: 74px 100px 54px;
+  }
+}
+
 .delete-person .quest {
   position: relative;
   display: -webkit-box;
@@ -1287,7 +1461,7 @@ form input {
 
 .delete-person .quest .deletePer {
   border-color: #e4e6ea;
-  padding: 0 22px;
+  padding: 13px 22px;
   color: #e4e6ea;
   display: inline-block;
   position: relative;
@@ -1324,7 +1498,7 @@ form input {
   background-color: #e4e6ea;
   border-color: #e4e6ea;
   color: #f1524b;
-  padding: 0 22px;
+  padding: 13px 22px;
   display: inline-block;
   position: relative;
   overflow: hidden;
@@ -1495,6 +1669,7 @@ form input {
   background-color: #121212;
   margin-top: 84px;
   height: 240px;
+  margin-bottom: 10px;
 }
 
 .req-desc p {
@@ -1518,8 +1693,15 @@ form input {
   gap: 15px;
 }
 
-.req-info div p {
+.req-info div .req-p {
   color: #b1b3b7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 70px;
 }
 
 .req-from .req-title {
@@ -1538,6 +1720,10 @@ form input {
           justify-content: space-between;
   gap: 100px;
   width: 90%;
+}
+
+.req-from .req-infos .req-p {
+  width: 104px;
 }
 
 .req-from .req-desc-note .note {
@@ -1560,6 +1746,7 @@ form input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 100px;
+  margin-bottom: 13px;
 }
 
 .req-infos-for .floor-layout {
@@ -1577,14 +1764,27 @@ form input {
   top: 35%;
 }
 
-.approved-title {
+.req-app-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.req-app-container .approved-title {
   color: #25e871;
   border-bottom: solid 1px #3a3b3c;
   margin-bottom: 39px;
   padding-bottom: 5px;
 }
 
-.req-approved {
+.req-app-container .req-approved {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1595,9 +1795,12 @@ form input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.req-approved .req-infos-app {
+.req-app-container .req-approved .req-infos-app {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1608,16 +1811,21 @@ form input {
   margin-top: 37px;
 }
 
-.req-approved .done {
+.req-app-container .req-approved .req-infos-app .req-app {
+  width: 100%;
+}
+
+.req-app-container .req-approved .done {
   border-color: #e4e6ea;
-  padding: 0 35px;
+  padding: 11px 35px;
   color: #e4e6ea;
+  margin-top: auto;
   display: inline-block;
   position: relative;
   overflow: hidden;
 }
 
-.req-approved .done::before {
+.req-app-container .req-approved .done::before {
   content: "";
   position: absolute;
   background-color: #e4e6ea;
@@ -1635,7 +1843,7 @@ form input {
   pointer-events: none;
 }
 
-.req-approved .done:active::before {
+.req-app-container .req-approved .done:active::before {
   -webkit-transition: 0s;
   transition: 0s;
   opacity: 1;
@@ -1646,29 +1854,15 @@ form input {
 #map {
   background: url("../icons/svg/Wendt-Floor.svg");
   background-size: cover;
-  width: 249px;
-  height: 363px;
   margin: auto;
 }
 
-#test {
-  display: block;
-  height: 321px;
-  width: 466px;
-}
-
-#test img {
-  shape-outside: url("../icons/svg/Wendt-Floor.svg");
-  shape-margin: 2%;
-}
-
 .coordinates {
-  background: rgba(0, 0, 0, 0.5);
   color: #fff;
   position: absolute;
   top: 440px;
-  left: 10px;
-  padding: 5px 10px;
+  right: 75px;
+  padding: 0px 20px;
   margin: 0;
   font-size: 11px;
   line-height: 18px;
@@ -1763,6 +1957,12 @@ canvas {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+  .login-container .Full-Glow-Orb .welcome .b-text-r {
+    font-size: 16px;
+  }
 }
 
 .login-container .login {
@@ -1872,6 +2072,7 @@ canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 10px;
 }
 
 .modal-g .desc .form .tags .tag-g:not(:last-child) {
@@ -2040,6 +2241,7 @@ canvas {
   height: 50px;
   border-radius: 34px;
   border: solid 2px #3a3b3c;
+  margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2093,6 +2295,12 @@ canvas {
   height: 51px;
 }
 
+@media (max-width: 1200px) {
+  .help-user .user-type .exec-manager::before {
+    top: 32px;
+  }
+}
+
 .help-user .user-type .exec-manager::after {
   content: "";
   position: absolute;
@@ -2102,12 +2310,24 @@ canvas {
   width: 122px;
 }
 
+@media (max-width: 1200px) {
+  .help-user .user-type .exec-manager::after {
+    top: 82px;
+  }
+}
+
 .help-user .user-type .build-manager {
   display: block;
   margin-top: 32px;
   left: 266px;
   max-width: 233px;
   position: relative;
+}
+
+@media (max-width: 1200px) {
+  .help-user .user-type .build-manager {
+    left: 235px;
+  }
 }
 
 .help-user .user-type .build-manager::before {
@@ -2145,6 +2365,12 @@ canvas {
           justify-content: center;
 }
 
+@media (max-width: 1200px) {
+  .help-user .user-type .stud {
+    left: 494px;
+  }
+}
+
 .help-user .user-type .stud::before {
   content: "";
   position: absolute;
@@ -2172,13 +2398,13 @@ canvas {
 }
 
 .help-user .buttons .dont {
-  padding: 0 14px;
+  padding: 13px 14px;
   color: #e4e6ea;
   border-color: #e4e6ea;
 }
 
 .help-user .buttons .next {
-  padding: 0 34px;
+  padding: 13px 34px;
   color: #fec32d;
   border-color: #fec32d;
 }
@@ -2210,7 +2436,7 @@ canvas {
 
 .perm-request .buttons .submit {
   border-color: #25e871;
-  padding: 0 23px;
+  padding: 11px 23px;
   color: #25e871;
   display: inline-block;
   position: relative;

@@ -2,12 +2,14 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    gap: 24px;
+    margin-bottom: 17px;
     &::after{
         content:"";
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 50%;
+        left: 52%;
         border-left: solid 1px $brownish-grey;
         transform: translate(-50%);
     }

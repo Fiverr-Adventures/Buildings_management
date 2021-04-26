@@ -5,10 +5,11 @@
         display: flex;
         gap: 15px;
         // border: 1px solid;
-        p{
+        .req-p{
             color: $cool-grey;
-            // border: 1px solid;
-            // align-self: flex-end;
+            display: flex;
+            justify-content: flex-end;
+            width: 70px;
         }
     }
 }

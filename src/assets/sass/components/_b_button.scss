@@ -1,9 +1,12 @@
 .b-button {
-    height: 56px;
+    // height: 56px;
     border-radius: 34px;
     border: solid 2px;
     color: $azure;
     text-align: center;
     @include ripple-effect($azure-two);
     // margin-top: auto;
+    @include for-size(desktop-down){
+        // height: 46px;
+    }
 }

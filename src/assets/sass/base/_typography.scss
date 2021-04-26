@@ -129,4 +129,158 @@ label {
     font-size: 12px;
     line-height: 1.33;
     text-align: center;
-  }
+}
+// desktop down
+@include for-size(desktop-down){
+    h3 {
+        // font-size: 48px;
+        font-size: 44px;
+    } 
+    .title {
+        // font-size: 42px;
+        font-size: 38px;
+    }
+    .number {
+        // font-size: 38px;
+        font-size: 34px;
+      }
+    h4 {
+        // font-size: 32px;
+        font-size: 28px;
+    }
+    .label {
+        // font-size: 24px;
+        font-size: 20px;
+    }
+    .buttonText {
+        // font-size: 20px;
+        font-size: 18px;
+    }
+    .medium {
+        // font-size: 20px;
+        font-size: 18px;
+    }
+    ::placeholder {
+        // font-size: 20px;
+        font-size: 18px;
+    }
+    small {
+        // font-size: 16px;
+        font-size: 14px;
+    }
+    .big {
+        // font-size: 32px;
+        font-size: 28px;
+    }
+    label {
+        // font-size: 28px;
+        font-size: 24px;
+    }
+    .label-2 {
+        // font-size: 24px;
+        font-size: 20px;
+    }
+    .label-3 {
+        // font-size: 24px;
+        font-size: 20px;
+    }
+    .b-text-b {
+        // font-size: 26px;
+        font-size: 22px;
+    }
+    .b-text-m {
+        // font-size: 24px;
+        font-size: 20px;
+    }
+    .large {
+        // font-size: 22px;
+        font-size: 18px;
+    }
+    .b-text-s {
+        // font-size: 20px;
+        font-size: 16px;
+    }
+    .b-text-r {
+        // font-size: 20px;
+        font-size: 16px;
+    }
+    .x-small {
+        // font-size: 18px;
+        font-size: 14px;
+    }
+    .step {
+        // font-size: 12px;
+        font-size: 10px;
+    }
+}
+// desktop down small
+@include for-size(desktop-down-small){
+    h3 {
+        // font-size: 44px;
+        font-size: 40px;
+    } 
+    .title {
+        // font-size: 38px;
+        font-size: 34px;
+    }
+    .number {
+        // font-size: 34px;
+        font-size: 30px;
+      }
+    h4 {
+        // font-size: 28px;
+        font-size: 24px;
+    }
+    .label {
+        // font-size: 20px;
+        font-size: 16px;
+    }
+    .buttonText {
+        // font-size: 18px;
+        font-size: 14px;
+    }
+    .medium {
+        // font-size: 18px;
+        font-size: 14px;
+    }
+    ::placeholder {
+        // font-size: 18px;
+        font-size: 14px;
+    }
+    small {
+        // font-size: 14px;
+        font-size: 12px;
+    }
+    .big {
+        // font-size: 28px;
+        font-size: 24px;
+    }
+    label {
+        // font-size: 24px;
+        font-size: 20px;
+    }
+    .label-2 {
+        // font-size: 20px;
+        font-size: 16px;
+    }
+    .label-3 {
+        // font-size: 20px;
+        font-size: 16px;
+    }
+    .b-text-b {
+        // font-size: 22px;
+        font-size: 18px;
+    }
+    .b-text-m {
+        // font-size: 20px;
+        font-size: 16px;
+    }
+    .large {
+        // font-size: 18px;
+        font-size: 14px;
+    }
+    .b-text-r {
+        // font-size: 14px;
+        font-size: 12px;
+    }
+}

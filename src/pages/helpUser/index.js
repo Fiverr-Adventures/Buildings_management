@@ -34,6 +34,7 @@ const HelpUser = () => {
     return (
         showLoader ? <video 
             autoPlay
+            muted
             style={{
                 position: 'absolute',
                 width: '100%',
@@ -49,36 +50,40 @@ const HelpUser = () => {
                     <Header title="People" add="Add People"/>
                     <CustomCard objects={people} type="people" />
                     <MyModal className="help-user" onClick={getAdd} sendAdd = {getAdd}>
-                        <Intro />
-                        <h4>User Type</h4>
-                        <div className="user-type">
-                            <label className="exec-manager"
-                                style={{color: type !== "Student" ? "#fec32d" : null}}>
-                                Executive Manager
-                            </label>
-                            <label className="build-manager">Building Manager</label>
-                            <div className="stud">
-                                <label style={{color: type === "Student" ? "#fec32d" : null}}>
-                                    Student
-                                </label>
-                                <label>Staff</label>
-                                <label>Faculty</label>  
-                            </div> 
-                        </div>
-                        <h4>Permissions</h4>
-                    {type === "Student" ? <p className="label-2 permission">
-                            Based on your user type you do not oversee any buildings, however, you
-                            can request access to certain buildings. These will be approved or denied
-                            by the building manger and executive manager.
-                        </p> :
-                        <ManagerPermission />}
-                        <div className="buttons">
-                            <Link to="home">
-                                <Button2 className="dont">Don’t Show Again</Button2>
-                            </Link>
-                            <Link to="WalkTrought">
-                                <Button2 className="next" >Next</Button2>
-                            </Link>
+                        <div className="modal-g">
+                            <Intro />
+                            <h4>User Type</h4>
+                            <div className="desc">
+                                <div className="user-type">
+                                    <label className="exec-manager"
+                                        style={{color: type !== "Student" ? "#fec32d" : null}}>
+                                        Executive Manager
+                                    </label>
+                                    <label className="build-manager">Building Manager</label>
+                                    <div className="stud">
+                                        <label style={{color: type === "Student" ? "#fec32d" : null}}>
+                                            Student
+                                        </label>
+                                        <label>Staff</label>
+                                        <label>Faculty</label>  
+                                    </div> 
+                                </div>
+                                <h4>Permissions</h4>
+                            {type === "Student" ? <p className="label-2 permission">
+                                    Based on your user type you do not oversee any buildings, however, you
+                                    can request access to certain buildings. These will be approved or denied
+                                    by the building manger and executive manager.
+                                </p> :
+                                <ManagerPermission />}
+                                <div className="buttons">
+                                    <Link to="home">
+                                        <Button2 className="dont">Don’t Show Again</Button2>
+                                    </Link>
+                                    <Link to="WalkTrought">
+                                        <Button2 className="next" >Next</Button2>
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
                     </MyModal>
                 </Page>

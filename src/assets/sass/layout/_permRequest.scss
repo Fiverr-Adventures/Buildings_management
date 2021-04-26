@@ -10,7 +10,7 @@
         gap: 83px;
         .submit{
             border-color: $weird-green-two;
-            padding: 0 23px;
+            padding: 11px 23px;
             color: $weird-green-two;
             @include ripple-effect($weird-green-two);
         }

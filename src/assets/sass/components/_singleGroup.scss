@@ -9,7 +9,7 @@
     width: 90%;
     gap: 11px;
     div {
-        @include not-last-child('.tag-info') {
+       .tag-info{
             margin-bottom: 13px;
         }
     }

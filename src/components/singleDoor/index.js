@@ -15,14 +15,18 @@ export default function SingleDoor (props) {
     
     return (
         <MyModal sendAdd = {getAdd} onClick={passAdd} className="single-person">
-            <h3>Door</h3>
-            <DoorInfo object={props.object} />
-            <div className="map">
-                <img src={WendtFloor} alt="map" /> 
-            </div>
-            <div className="save-delete">
-                <Button2 className="save">Save</Button2>
-                <Button2  className="delete">Delete</Button2>
+            <div className="modal-g">
+                <h3>Door</h3>
+                <div className="desc">
+                    <DoorInfo object={props.object} />
+                    <div className="map">
+                        <img src={WendtFloor} alt="map" /> 
+                    </div>
+                    <div className="save-delete">
+                        <Button2 className="save">Save</Button2>
+                        <Button2  className="delete">Delete</Button2>
+                    </div>
+                </div>
             </div>
         </MyModal>
     )

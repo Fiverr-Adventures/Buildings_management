@@ -5,7 +5,16 @@
     text-align: center;
     width: 100%;
     margin-top: 28px;
+    margin-bottom: 10px;
     img {
         cursor: pointer;
+    }
+    svg{
+        g{
+            fill: rgba(255, 237, 52, 0.31);
+            circle{
+                fill: transparent;
+            }
+        }
     }
 }

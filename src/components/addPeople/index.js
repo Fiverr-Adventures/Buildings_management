@@ -38,7 +38,7 @@ export default function AddPeople(props) {
             <div className="modal-g">
                 <h3 >Add People</h3> 
                 <div className="desc">
-                    <div className="form">
+                    <form className="form">
                         <DropDown className="c-dropdown" label="Add By" option={selectedOption}
                             handleChange={handleChange} opt1="Single User" opt2="Import CSV"/>
                     { selectedOption === "Single User" ?
@@ -81,7 +81,7 @@ export default function AddPeople(props) {
                         {typePeople}
                         </div> : <AddMany />}
                     { selectedOption === "Single User" ? <MyButton className1="g-container" className2="small-b">Save</MyButton> : null }
-                    </div>
+                    </form>
                 </div>
             </div>
         </MyModal>

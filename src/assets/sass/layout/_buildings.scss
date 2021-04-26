@@ -40,6 +40,7 @@
                 height: 50px;
                 border-radius: 34px;
                 border: solid 2px $charcoal-grey;
+                margin-bottom: 10px;
                 @include flex(center, center);
                 button {
                     color: $cool-grey;

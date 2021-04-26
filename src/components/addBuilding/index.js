@@ -42,12 +42,13 @@ export default function AddBuilding (props) {
     const fileUploadInputChange2 = (e) => {
         setfileUpload2(e.target.value);
     }
+ 
     return (
         <MyModal sendAdd = {getAdd} onClick={passAdd} >
             <div className="modal-g">
                 <h3 >Add Buildings</h3>  
                 <div className="desc">
-                    <div className="form">
+                    <form className="form">
                         <div className="inputs">
                             <div className="group-input">
                                 <label style={{color: "#b1b3b7"}}>Building Name</label>
@@ -108,11 +109,11 @@ export default function AddBuilding (props) {
                                 </div>
                             </div> 
                             <div className="add-buil">
-                                <button className="b-text-s">+</button>
+                                <button className="b-text-s" type="button">+</button>
                             </div>
                         </div>
                         <MyButton className1="g-container" className2="small-b">Save</MyButton>
-                    </div>
+                    </form>
                 </div>
             </div>
         </MyModal>

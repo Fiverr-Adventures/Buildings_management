@@ -7,7 +7,7 @@ const ReqFor = (props) => {
             <div className="req-infos-for">
                 <ReqInfo    key1="Building" value1="Wendt Commons"
                             key2="Door(s)" value2="Room 433"
-                            key3="Type" value3="Classroom"
+                            key3="Type" value3="Classroom" 
                 />
                 <div className="floor-layout">
                     <img src={FloorLayout} alt="" />

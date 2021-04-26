@@ -24,21 +24,25 @@ const WalkTrought = () => {
                     <Header title="People" add="Add People"/>
                     <CustomCard objects={people} type="people" />
                     <MyModal className="help-user walk-trought" onClick={getAdd} sendAdd = {getAdd}>
-                        <Intro style={{marginBottom: '100px'}}/>
-                        <div className="steps">
-                            <p className="title"><span>Step 1:</span>Add Building</p>
-                            <p className="title"><span>Step 2:</span>Add Doors</p>
-                            <p className="title"><span>Step 3:</span>Add Groups (of doors)</p>
-                            <p className="title"><span>Step 4:</span>Add People (connected to keys)</p>  
-                        </div>
-                
-                        <div className="buttons">
-                            <Link to="Home">
-                                <Button2 className="dont">Don’t Show Again</Button2>
-                            </Link>
-                            <Link to="Home">
-                                <Button2 className="next">Next</Button2>
-                            </Link>
+                        <div className="modal-g">
+                            <Intro style={{marginBottom: '100px'}}/>
+                            <div className="desc">
+                                <div className="steps">
+                                    <p className="title"><span>Step 1:</span>Add Building</p>
+                                    <p className="title"><span>Step 2:</span>Add Doors</p>
+                                    <p className="title"><span>Step 3:</span>Add Groups (of doors)</p>
+                                    <p className="title"><span>Step 4:</span>Add People (connected to keys)</p>  
+                                </div>
+                        
+                                <div className="buttons">
+                                    <Link to="Home">
+                                        <Button2 className="dont">Don’t Show Again</Button2>
+                                    </Link>
+                                    <Link to="Home">
+                                        <Button2 className="next">Next</Button2>
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
                     </MyModal>
                 </Page>

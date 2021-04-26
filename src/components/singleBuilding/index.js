@@ -18,24 +18,28 @@ export default function SingleBuilding (props) {
 
     return (
         <MyModal sendAdd = {getAdd} onClick={passAdd} className="single-person">
-            <h3>Building</h3>
-            <BuildingInfo object={props.object} />
-            <div className="floors">
-                <p className="large">Floor Layouts</p>
-                <div className="floor-scroll">
-                    { Floors.map(obj => {
-                        return ( 
-                            <div className="floor-layout" key={index++} >
-                                <label>{obj}</label>
-                                <button className="large">edit</button>
-                            </div>
-                        )
-                    })}
+            <div className="modal-g">
+                <h3>Building</h3>
+                <div className="desc">
+                    <BuildingInfo object={props.object} />
+                    <div className="floors">
+                        <p className="large">Floor Layouts</p>
+                        <div className="floor-scroll">
+                            { Floors.map(obj => {
+                                return ( 
+                                    <div className="floor-layout" key={index++} >
+                                        <label>{obj}</label>
+                                        <button className="large">edit</button>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+                    <div className="save-delete">
+                        <Button2 className="save">Save</Button2>
+                        <Button2  className="delete">Delete</Button2>
+                    </div>
                 </div>
-            </div>
-            <div className="save-delete">
-                <Button2 className="save">Save</Button2>
-                <Button2  className="delete">Delete</Button2>
             </div>
         </MyModal>
     )

@@ -8,6 +8,10 @@
         gap: 15px;
         p {
             color: $cool-grey;
+            width: 100px;
+            @include for-size(desktop-down){
+                width: 70px;
+            }
         }
     }
 }

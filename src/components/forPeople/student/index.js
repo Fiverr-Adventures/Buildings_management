@@ -3,7 +3,7 @@ import SearchBar from "../../searchBar";
 
 const Student = () => {
     return (
-        <div> 
+        <div style={{marginTop:"45px"}}> 
             <div className="search-door">
                 <label>Groups</label>
                 <p className="large">This will dictate what doors they have access to</p>

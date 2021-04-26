@@ -1,5 +1,8 @@
 .single-person {
     padding: 21px 118px 35px 121px;
+    @include for-size(desktop-down){
+        padding: 21px 87px 35px 87px;
+    }
     button {color: $azure}
     h3{ 
         text-align: center;
@@ -27,12 +30,12 @@
         margin-top: auto;
     }
     .save{
-        padding: 0 39px;
+        padding: 11px 39px;
         color: $azure;
         border-color: $azure;
     }
     .delete {
-        padding: 0 28px;
+        padding: 11px 28px;
         color: $coral;
         border-color: $coral;
         @include ripple-effect($coral);

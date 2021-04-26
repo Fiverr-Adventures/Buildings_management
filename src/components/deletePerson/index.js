@@ -15,16 +15,19 @@ const DeletePerson = (props) => {
     }
     return ( 
         <MyModal sendAdd = {getAdd} onClick={passAdd} className="single-person delete-person">
-            <PersonInfo object={props.object}/>
-            <div className="quest">
-                <h3>
-                    Are you sure you want to delete {props.name} from all properties?
-                </h3>
-                <div className="buttons">
-                    <Button2 className="deletePer">Yes, Delete</Button2>
-                    <Button2 className="cancel" onClick={passAdd}>No, Cancel</Button2>  
+            <div className="modal-g">
+                <div className="desc">
+                    <PersonInfo object={props.object}/>
+                    <div className="quest">
+                        <h3>
+                            Are you sure you want to delete {props.name} from all properties?
+                        </h3>
+                        <div className="buttons">
+                            <Button2 className="deletePer">Yes, Delete</Button2>
+                            <Button2 className="cancel" onClick={passAdd}>No, Cancel</Button2>  
+                        </div>
+                    </div>
                 </div>
-                
             </div>
         </MyModal>
      );

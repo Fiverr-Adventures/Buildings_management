@@ -23,6 +23,11 @@
         .welcome {
             @include flex(center, center);
             flex-direction: column;
+            @include for-size(desktop-down-small){
+                .b-text-r {
+                    font-size: 16px;
+                }
+            }
         }
     }
     .login{

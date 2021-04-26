@@ -9,7 +9,7 @@ const ReqFrom = () => {
                 <ReqProfil />
                 <ReqInfo    key1="User Type" value1="Student"
                             key2="Key(s) Type" value2="Wiscard"
-                            key3="Key(s)" value3="279024"
+                            key3="Key(s)" value3="279024" className="req-p"
                 />
             </div>
             <div className="req-desc-note">

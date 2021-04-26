@@ -1,6 +1,9 @@
 .delete-person{
     background-color: $coral;
     padding: 74px 150px 54px;
+    @include for-size(desktop-down){
+        padding: 74px 100px 54px;
+    }
     .quest {
         position: relative;
         display: flex;
@@ -16,7 +19,7 @@
         }
         .deletePer{
             border-color: $pale-grey;
-            padding: 0 22px;
+            padding: 13px 22px;
             color: $pale-grey;
             @include ripple-effect($pale-grey);
         }
@@ -24,7 +27,7 @@
             background-color: $pale-grey;
             border-color: $pale-grey;
             color: $coral;
-            padding: 0 22px;
+            padding: 13px 22px;
             @include ripple-effect($coral);
         }
     }

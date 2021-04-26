@@ -9,7 +9,7 @@ export default function index() {
         <Container style={{maxWidth: "100%", paddingRight: "0",paddingLeft: "0"}}>
             <video 
                 autoPlay
-                // loop
+                muted
                 style={{
                     position: 'absolute',
                     width: '100%',
@@ -25,7 +25,7 @@ export default function index() {
                     <div className="Full-Glow-Orb">
                         <div className="welcome" style={{   backgroundImage: `url(${FullGlowOrb})`, 
                                         backgroundRepeat: 'no-repeat', 
-                                        width: "340px", height: "340px"}}>
+                                        width: "340px", height: "340px"}} >
                             <h4>Welcome</h4>
                             <p className="b-text-r">
                                 to the future of security

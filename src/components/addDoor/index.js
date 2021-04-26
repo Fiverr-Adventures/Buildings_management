@@ -3,7 +3,6 @@ import MyModal from "../../components/modal";
 import Input from "../../components/input";
 import MyButton from '../../components/s_button';
 import InputRadio from '../../components/input_radio';
-import WendtFloor from '../../assets/icons/svg/Wendt-Floor.svg';
 import DraggableMarker from '../../components/draggableMarker'
 
 export default function AddDoor (props) {
@@ -16,17 +15,17 @@ export default function AddDoor (props) {
     const passAdd = ()=> {
         props.getAdd(add);
     }
-    
     const [selectedType, setSelectedType] = useState("Interior Private");
     const onValueChange= (event) => {
         setSelectedType(event.target.value)
     }
+  
     return (
         <MyModal sendAdd = {getAdd} onClick={passAdd} >
             <div className="modal-g">
                 <h3 className="h3">Add Door</h3>
                 <div className="desc">
-                    <div className="form">
+                    <form className="form" >
                         <div className="input-details">   
                             <div className="inputs">
                                 <div className="group-input">
@@ -58,7 +57,7 @@ export default function AddDoor (props) {
                             </div>
                         </div>
                         <MyButton className1="g-container" className2="small-b">Save</MyButton>
-                    </div>
+                    </form>
                 </div>
             </div>
         </MyModal>

@@ -8,13 +8,13 @@ export const doorData = [
     {
         name: "East Entrance",
         building: "Wendt Commons",
-        floor: 4,
+        floor: 3,
         type:"Interior Public",
     },
     {
         name: "Room 101",
         building: "Wendt Commons",
-        floor: 4,
+        floor: 2,
         type:"Interior Public",
     },
     {
@@ -33,7 +33,7 @@ export const doorData = [
     {
         name: "Room 432",
         building: "Witte Hall",
-        floor: 4,
+        floor: 1,
         type:"Interior Public",
     },
     {
@@ -45,13 +45,13 @@ export const doorData = [
     {
         name: "Room 13",
         building: "Witte Hall",
-        floor: 4,
+        floor: 13,
         type:"Interior Public",
     },
     {
         name: "Room 37",
         building: "Witte Hall",
-        floor: 4,
+        floor: 5,
         type:"Interior Public",
     },
 ]

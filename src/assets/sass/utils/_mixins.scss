@@ -12,8 +12,12 @@
 		@media (max-width: $breakpoint-lg) {
 			@content;
 		}
-	} @else if $size == desktop-down {
+	} @else if $size == desktop-down-small {
 		@media (max-width: $breakpoint-xl) {
+			@content;
+		}
+	} @else if $size == desktop-down {
+		@media (max-width: $breakpoint-xll) {
 			@content;
 		}
 	} @else if $size == desktop-up {

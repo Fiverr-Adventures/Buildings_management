@@ -17,7 +17,7 @@ const AddManyPeople= ()=> {
             <label>Drag & Drop CSV here</label>
             <label className="or">OR</label>
             <input type="file" hidden ref={inputReference} onChange={fileUploadInputChange} />
-            <MyButton className="upload" onClick={fileUploadAction}>
+            <MyButton className2="upload" onClick={fileUploadAction}>
                 Upload
             </MyButton>
             {fileUpload}

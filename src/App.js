@@ -20,14 +20,6 @@ function App() {
   return (
      <Router>
           <Switch>
-               {/* <Route path='/test'>
-                    <div id='test'>
-                         <img
-                         src={image}
-                         />
-                         <p>jqkdhqekjbqkdqzdlqidj lqfd qjfdlqjfqelfiqemlfiq e:fuiqeuf kqefbik;qfdy q;efi;yqe flqefk</p>
-                    </div>
-               </Route> */}
                <Route path='/Login'>
                     <Login />
                </Route>

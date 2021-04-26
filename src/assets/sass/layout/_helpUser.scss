@@ -26,6 +26,9 @@
                 border-left: solid 1px $pale-grey;
                 transform: translate(-50%);
                 height: 51px;
+                @include for-size(desktop-down-small){
+                    top: 32px;
+                }
             }
             &::after{
                 content: "";
@@ -34,6 +37,9 @@
                 left: 50%;
                 border-bottom: solid 1px $pale-grey;
                 width: 122px;
+                @include for-size(desktop-down-small){
+                    top: 82px;
+                }
             }
         }
         .build-manager {
@@ -42,6 +48,9 @@
             left: 266px;
             max-width: 233px;
             position: relative;
+            @include for-size(desktop-down-small){
+                left: 235px;
+            }
             &::before{
                 content: "";
                 position: absolute;
@@ -70,6 +79,9 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            @include for-size(desktop-down-small){
+                left: 494px;
+            }
             &::before{
                 content: "";
                 position: absolute;
@@ -91,12 +103,12 @@
         gap: 29px;
         margin-top: auto;
       .dont{
-        padding: 0 14px;
+        padding: 13px 14px;
         color: $pale-grey;
         border-color: $pale-grey;
         }
         .next{
-            padding: 0 34px;
+            padding: 13px 34px;
             color: $golden-yellow;
             border-color: $golden-yellow;
         }   

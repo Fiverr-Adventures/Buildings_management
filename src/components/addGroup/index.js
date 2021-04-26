@@ -27,7 +27,7 @@ export default function AddGroup(props) {
                         the lease ends. Or group communal rooms across floors to have them
                         auto-lock after a certain time.
                     </p>
-                    <div className="form">
+                    <form className="form">
                         <div className="input-details">
                             <div className="inputs">
                                 <div className="group-input">
@@ -54,7 +54,7 @@ export default function AddGroup(props) {
                             <Tag text = "College of L&S" className="tag-g"/>
                         </div>
                         <MyButton  className1="g-container" className2="small-b">Save</MyButton>
-                    </div>
+                    </form>
                 </div>
             </div>
         </MyModal>

@@ -3,7 +3,7 @@ import SearchBar from "../../searchBar";
 
 const BuildingManager = () => {
     return (
-        <div> 
+        <div style={{marginTop:"45px"}}> 
             <div className="search-door">
                 <label>Groups</label>
                 <p className="large">This will dictate what buildings they have
