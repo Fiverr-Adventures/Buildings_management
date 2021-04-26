@@ -18,6 +18,7 @@ const HelpUser = () => {
     const getAdd = (isClick)=> {
         setAdd(isClick);
     }
+
     const [showLoader, setshowLoader] = useState(true);
     useEffect(
         () => {

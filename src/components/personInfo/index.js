@@ -1,7 +1,7 @@
 const PersonInfo = (props) => {
     return ( 
         <div className="person-info">
-            <img src={props.object.img} />
+            <img src={props.object.img} alt=""/>
             <div>
                 <h4>{props.object.first}</h4>
                 <h4>{props.object.last}</h4>

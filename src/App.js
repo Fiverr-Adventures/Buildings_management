@@ -14,7 +14,7 @@ import Login from "./pages/login";
 import HelpUser from './pages/helpUser';
 import WalkTrought from './pages/walkTrought';
 import PermissionsRequest from './pages/permissionRequest';
-import image from './assets/icons/svg/Wendt-Floor.svg'
+
 function App() {
 
   return (

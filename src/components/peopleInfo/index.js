@@ -16,7 +16,7 @@ const ListInfo = (props) => {
                             className="obj"  classNamep="p"/>  
             </div>
             <div className="profil-img">
-                <img src={props.object.img} />
+                <img src={props.object.img} alt=""/>
                 <button className="large">edit</button>  
             </div>
         </div>
